@@ -8,5 +8,7 @@ CREATE TABLE client(
     telephone_n1 varchar(13) not null,
     telephone_n2 varchar(13),
     sexe char(1),
-    numero_cin int not null
+    numero_cin int not null,
+    id_facture_client int,
+    foreign key (id_facture_client) references facture(id_facture)
 );
