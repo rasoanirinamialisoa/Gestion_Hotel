@@ -4,9 +4,9 @@ Il permettra aux clients de consulter les disponibilités, de réserver des cham
 
 Bien sûr ! Voici une proposition de réécriture du README que vous avez demandé précédemment :
 
-# Système de Réservation en Ligne pour Novotel Madagascar
+# Système de Réservation en Ligne pour Akory Hôtel Madagascar
 
-Ce projet vise à faciliter la gestion de réservation d'hôtels en ligne pour la chaîne d'hôtels Novotel Madagascar. Il fournit un système de réservation en ligne convivial pour les clients, ainsi qu'une interface administrative pour la gestion des réservations.
+Ce projet vise à faciliter la gestion de réservation d'hôtels en ligne pour la chaîne d'hôtels Akory à Madagascar.
 
 ## Fonctionnalités clés
 
@@ -14,12 +14,12 @@ Ce projet vise à faciliter la gestion de réservation d'hôtels en ligne pour l
 - Recherche de chambres : Permet aux clients de rechercher des chambres disponibles en spécifiant des critères tels que la date d'arrivée, la durée du séjour, le type de chambre, etc.
 - Réservation de chambres : Permet aux clients de réserver des chambres en sélectionnant les options appropriées et en fournissant les détails nécessaires.
 - Gestion des disponibilités : Met à jour en temps réel les disponibilités des chambres en fonction des réservations effectuées.
-- Facturation et paiement : Génère automatiquement les factures pour les réservations, avec un calcul précis des coûts basé sur les tarifs et les options sélectionnés. Les clients peuvent effectuer le paiement en ligne de manière sécurisée.
+- Facturation et paiement : Génère automatiquement les factures pour les réservations, avec un calcul précis des coûts basé sur les tarifs et divers options.
 
 ## Technologies utilisées
 
 - Base de données : POSTGRESQL
-- Outils de développement : Git, Jmerise
+- Outils de développement : GitHub, Jmerise
 
 ## Installation et configuration
 1. Installez JMERISE sur votre machine locale
