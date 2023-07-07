@@ -30,11 +30,11 @@ Consultez le fichier README complet dans le répertoire du projet pour obtenir d
 
 ## Auteurs
 
-- [DEV_UNITED]
+- [DEV_UNITED_HEI]
 
 Si vous avez des questions supplémentaires ou avez besoin d'assistance, n'hésitez pas à nous contacter.
 
 Nous vous remercions pour votre intérêt et votre soutien !
 
 Cordialement,
-[DEV_UNITED]
+[DEV_UNITED_HEI]
