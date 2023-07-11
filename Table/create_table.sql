@@ -127,5 +127,31 @@ CREATE TABLE hotel (
     id_province INT,
     FOREIGN KEY (id_province) REFERENCES province_available (id_province)
 );
+CREATE TABLE payment (
+    id_payment SERIAL PRIMARY KEY,
+    payment_date DATE,
+    amount_paid FLOAT,
+    number_night INT,
+    room_occupied INT,
+    deadline_payment VARCHAR(200),
+    lending_status BOOL,
+    total_amount_status BOOL,
+    id_client INT,
+    FOREIGN KEY (id_client) REFERENCES client (id_client)
+);
 
+CREATE TABLE payment_method (
+    id_payment_method SERIAL PRIMARY KEY,
+    mobile_money BOOL,
+    credit_card BOOL,
+    cash BOOL
+);
+
+CREATE TABLE choose_payment (
+    id_choose_payment SERIAL PRIMARY KEY,
+    id_payment INT,
+    id_payment_method INT,
+    FOREIGN KEY (id_payment) REFERENCES payment (id_payment),
+    FOREIGN KEY (id_payment_method) REFERENCES payment_method (id_payment_method)
+);
 
