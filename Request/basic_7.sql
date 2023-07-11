@@ -1,5 +1,5 @@
-CREATE VIEW Facture AS
-SELECT R.id_customer, SUM(P.montant_total) AS total_amount
-FROM Client C
-JOIN Price P ON C.id_price = P.id_price
-GROUP BY P.id_price, R.id_customer;
+SELECT c.*
+FROM client c
+INNER JOIN payment p ON c.id_client = p.client_id
+GROUP BY c.id_client
+HAVING SUM(p.amount_paid) < SUM(p.amount_due);
