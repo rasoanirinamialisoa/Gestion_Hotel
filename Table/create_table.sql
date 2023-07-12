@@ -1,3 +1,6 @@
+--créer la base de données
+CREATE DATABASE gestion_hotel;
+
 CREATE TABLE receptionist (
     id_employee INT PRIMARY KEY,
     first_name VARCHAR(200),
