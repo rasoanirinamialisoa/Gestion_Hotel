@@ -17,7 +17,7 @@ CREATE TABLE client (
     gender CHAR(1),
     CIN INT,
     Email VARCHAR(100),
-    Password VARCHAR(5)
+    Password VARCHAR(5),
     id_employee INT,
     FOREIGN KEY (id_employee) REFERENCES receptionist (id_employee)
 );
@@ -57,7 +57,7 @@ CREATE TABLE reservation (
     FOREIGN KEY (id_client) REFERENCES client (id_client)
 );
 
-CREATE TABLE cancel (
+CREATE TABLE isCancel (
     id_cancel INT PRIMARY KEY,
     status_cancel BOOL,
     id_reservation INT,
@@ -81,6 +81,20 @@ CREATE TABLE room_features (
     room_service BOOL,
     mini_bar BOOL,
     flat_screen BOOL
+);
+
+CREATE TABLE province_available (
+    id_province SERIAL PRIMARY KEY,
+    province_name VARCHAR(100),
+    code_province INT
+);
+
+CREATE TABLE hotel (
+    id_hotel SERIAL PRIMARY KEY,
+    hotel_name VARCHAR(200),
+    address VARCHAR(200),
+    id_province INT,
+    FOREIGN KEY (id_province) REFERENCES province_available (id_province)
 );
 
 CREATE TABLE room (
@@ -114,19 +128,6 @@ CREATE TABLE price (
     FOREIGN KEY (id_season) REFERENCES season (id_season)
 );
 
-CREATE TABLE province_available (
-    id_province SERIAL PRIMARY KEY,
-    province_name VARCHAR(100),
-    code_province INT
-);
-
-CREATE TABLE hotel (
-    id_hotel SERIAL PRIMARY KEY,
-    hotel_name VARCHAR(200),
-    address VARCHAR(200),
-    id_province INT,
-    FOREIGN KEY (id_province) REFERENCES province_available (id_province)
-);
 CREATE TABLE payment (
     id_payment SERIAL PRIMARY KEY,
     payment_date DATE,
