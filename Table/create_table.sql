@@ -183,7 +183,7 @@ ALTER TABLE client ALTER COLUMN CIN TYPE VARCHAR(200);
 --change work_contact's type on vachar
 ALTER TABLE receptionist ALTER COLUMN work_contact TYPE VARCHAR(200);
 
---add column id_hotel and constraint in table receptionist
+-- Add id_hotel column and foreign key constraint to the receptionist table
 ALTER TABLE receptionist
 ADD COLUMN id_hotel INT,
 ADD CONSTRAINT fk_receptionist_hotel
