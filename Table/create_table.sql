@@ -175,3 +175,6 @@ ALTER TABLE reservation ADD COLUMN is_cancel BOOLEAN ;
 
 --change the CIN's type on varchar
 ALTER TABLE client ALTER COLUMN CIN TYPE VARCHAR(200);
+
+--change work_contact's type on vachar
+ALTER TABLE receptionist ALTER COLUMN work_contact TYPE VARCHAR(200);
