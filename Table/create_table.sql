@@ -7,7 +7,9 @@ CREATE TABLE receptionist (
     last_name VARCHAR(200),
     Password VARCHAR(50),
     email VARCHAR(100),
-    work_contact INT
+    work_contact INT,
+    id_hotel INT,
+    FOREIGN KEY (id_hotel) REFERENCES hotel (id_hotel)
 );
 
 CREATE TABLE client (
