@@ -169,3 +169,6 @@ CREATE TABLE feedback (
 
 --delete isCancel table
 DROP TABLE isCancel;
+
+--add isCancel on reservation table
+ALTER TABLE reservation ADD COLUMN is_cancel BOOLEAN ;	
