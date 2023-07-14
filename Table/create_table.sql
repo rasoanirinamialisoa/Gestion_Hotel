@@ -7,7 +7,7 @@ CREATE TABLE receptionist (
     last_name VARCHAR(200),
     Password VARCHAR(50),
     email VARCHAR(100),
-    work_contact INT,
+    work_contact VARCHAR (200),
     id_hotel INT,
     FOREIGN KEY (id_hotel) REFERENCES hotel (id_hotel)
 );
@@ -20,7 +20,7 @@ CREATE TABLE client (
     address VARCHAR(200),
     emergency_number VARCHAR(50),
     gender CHAR(1),
-    CIN INT,
+    CIN VARCHAR (200),
     Email VARCHAR(100),
     Password VARCHAR(5),
     id_employee INT,
@@ -175,7 +175,7 @@ CREATE TABLE feedback (
 DROP TABLE isCancel;
 
 --add isCancel on reservation table
-ALTER TABLE reservation ADD COLUMN is_cancel BOOLEAN ;	
+ALTER TABLE reservation ADD COLUMN is_cancelled BOOLEAN ;	
 
 --change the CIN's type on varchar
 ALTER TABLE client ALTER COLUMN CIN TYPE VARCHAR(200);
