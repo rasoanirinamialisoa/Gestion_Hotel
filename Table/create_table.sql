@@ -56,15 +56,9 @@ CREATE TABLE reservation (
     date_arrived DATE,
     leaving_date DATE,
     number_of_person INT,
+    is_cancelled BOOL
     id_client INT,
     FOREIGN KEY (id_client) REFERENCES client (id_client)
-);
-
-CREATE TABLE isCancel (
-    id_cancel INT PRIMARY KEY,
-    status_cancel BOOL,
-    id_reservation INT,
-    FOREIGN KEY (id_reservation) REFERENCES reservation (id_reservation)
 );
 
 CREATE TABLE promotion (
