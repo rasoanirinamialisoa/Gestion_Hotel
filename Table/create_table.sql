@@ -172,3 +172,6 @@ DROP TABLE isCancel;
 
 --add isCancel on reservation table
 ALTER TABLE reservation ADD COLUMN is_cancel BOOLEAN ;	
+
+--change the CIN's type on varchar
+ALTER TABLE client ALTER COLUMN CIN TYPE VARCHAR(200);
