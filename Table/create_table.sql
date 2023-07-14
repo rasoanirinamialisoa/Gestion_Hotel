@@ -167,3 +167,5 @@ CREATE TABLE feedback (
     sentiment VARCHAR(20)
 );
 
+--delete isCancel table
+DROP TABLE isCancel;
