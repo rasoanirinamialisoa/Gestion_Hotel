@@ -27,6 +27,14 @@ CREATE TABLE client (
     FOREIGN KEY (id_employee) REFERENCES receptionist (id_employee)
 );
 
+CREATE TABLE feedback(
+        id_feedback INT PRIMARY KEY,
+        comment text,
+        rating int,
+        id_client INT,
+        FOREIGN KEY (id_client) REFERENCES client (id_client) 
+);
+
 CREATE TABLE status_client (
     id_status_client INT PRIMARY KEY,
     status_arrived INT,
