@@ -159,3 +159,11 @@ CREATE TABLE choose_payment (
     FOREIGN KEY (id_payment_method) REFERENCES payment_method (id_payment_method)
 );
 
+CREATE TABLE feedback (
+    id_feedback SERIAL PRIMARY KEY,
+    id_client INT REFERENCES client(id_client),
+    comment TEXT,
+    rating INT,
+    sentiment VARCHAR(20)
+);
+
