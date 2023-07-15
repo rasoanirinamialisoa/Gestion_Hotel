@@ -1,3 +1,4 @@
+--Afficher la liste des hotels dans une localisation (province) donnée
 SELECT h.*
 FROM hotel h
 INNER JOIN province_available pa ON h.id_province = pa.id_province
