@@ -1,3 +1,4 @@
+--Afficher l'hotel avec le moins de reservations
 SELECT h.*, COUNT(r.id_reservation) AS reservation_count
 FROM hotel h
 LEFT JOIN room r ON h.id_hotel = r.id_hotel
