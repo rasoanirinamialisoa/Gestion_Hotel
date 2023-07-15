@@ -1,3 +1,4 @@
+--Afficher le nombre de réservations effectuées par un client donné durant une période donnée
 SELECT COUNT(*) AS reservation_count
 FROM reservation r
 INNER JOIN client c ON r.client_id = c.id_client
