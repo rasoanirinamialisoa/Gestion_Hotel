@@ -1,0 +1,10 @@
+insert into status_client (id_status_client, status_arrived, status_missing, in_fidelity, in_blacklist, id_client) values (1, 1, 1, true, true, 1);
+insert into status_client (id_status_client, status_arrived, status_missing, in_fidelity, in_blacklist, id_client) values (2, 6, 2, false, true, 2);
+insert into status_client (id_status_client, status_arrived, status_missing, in_fidelity, in_blacklist, id_client) values (3, 3, 6, true, false, 3);
+insert into status_client (id_status_client, status_arrived, status_missing, in_fidelity, in_blacklist, id_client) values (4, 7,9, true, true, 4);
+insert into status_client (id_status_client, status_arrived, status_missing, in_fidelity, in_blacklist, id_client) values (5, 5, 5, true, false, 5);
+insert into status_client (id_status_client, status_arrived, status_missing, in_fidelity, in_blacklist, id_client) values (6, 6, 6, true, false, 6);
+insert into status_client (id_status_client, status_arrived, status_missing, in_fidelity, in_blacklist, id_client) values (7, 5, 4, true, true, 7);
+insert into status_client (id_status_client, status_arrived, status_missing, in_fidelity, in_blacklist, id_client) values (8, 8, 8, false, false, 8);
+insert into status_client (id_status_client, status_arrived, status_missing, in_fidelity, in_blacklist, id_client) values (9, 9, 9, true, false, 9);
+insert into status_client (id_status_client, status_arrived, status_missing, in_fidelity, in_blacklist, id_client) values (10, 1, 10, false, true, 10);

@@ -1,0 +1,10 @@
+insert into room (id_room, number, room_type, id_promotion, id_reservation, id_features, id_hotel) values (1,475, 'Queen', 1, 1, 1, 1);
+insert into room (id_room, number, room_type, id_promotion, id_reservation, id_features, id_hotel) values (2, 475, 'Queen', 2, 2, 2, 2);
+insert into room (id_room, number, room_type, id_promotion, id_reservation, id_features, id_hotel) values (3, 937, 'Tween', 3, 3, 3, 3);
+insert into room (id_room, number, room_type, id_promotion, id_reservation, id_features, id_hotel) values (4, 240, 'VIP', 4, 4, 4, 4);
+insert into room (id_room, number, room_type, id_promotion, id_reservation, id_features, id_hotel) values (5, 240, 'VIP', 5, 5, 5, 5);
+insert into room (id_room, number, room_type, id_promotion, id_reservation, id_features, id_hotel) values (6, 412, 'Single', 6, 6, 6, 6);
+insert into room (id_room, number, room_type, id_promotion, id_reservation, id_features, id_hotel) values (7, 487, 'Suite', 7, 7, 7, 7);
+insert into room (id_room, number, room_type, id_promotion, id_reservation, id_features, id_hotel) values (8, 130, 'Tween', 8, 8, 8, 8);
+insert into room (id_room, number, room_type, id_promotion, id_reservation, id_features, id_hotel) values (9, 475, 'Queen', 9, 9, 9, 9);
+insert into room (id_room, number, room_type, id_promotion, id_reservation, id_features, id_hotel) values (10, 475, 'Queen', 10, 10, 10, 10);

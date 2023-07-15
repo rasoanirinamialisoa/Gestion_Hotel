@@ -1,0 +1,10 @@
+insert into service (id_service, service_name, description, price, reduction) values (1, 'concierge service', 'Beautiful views', 298.01, 347.72);
+insert into service (id_service, service_name, description, price, reduction) values (2, 'bar service', 'Excellent customer service', 685.37, 478.81);
+insert into service (id_service, service_name, description, price, reduction) values (3, 'concierge service', 'Convenient location', 282.65, 57.12);
+insert into service (id_service, service_name, description, price, reduction) values (4, 'concierge service', 'Top-notch amenities', 181.99, 64.6);
+insert into service (id_service, service_name, description, price, reduction) values (5, 'bar service', 'Excellent customer service', 807.46, 341.25);
+insert into service (id_service, service_name, description, price, reduction) values (6, 'concierge service', 'Excellent customer service', 502.65, 253.71);
+insert into service (id_service, service_name, description, price, reduction) values (7, 'waiter service', 'Top-notch amenities', 278.28, 835.95);
+insert into service (id_service, service_name, description, price, reduction) values (8, 'waiter service', 'Excellent customer service', 801.64, 629.12);
+insert into service (id_service, service_name, description, price, reduction) values (9, 'waiter service', 'Convenient location', 107.36, 898.33);
+insert into service (id_service, service_name, description, price, reduction) values (10, 'room service', 'Convenient location', 562.72, 658.09);

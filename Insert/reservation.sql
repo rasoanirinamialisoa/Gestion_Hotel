@@ -1,0 +1,10 @@
+insert into reservation (id_reservation, date_arrived, leaving_date, number_of_person, id_client) values (1, '2023-01-26', '2023-06-09', 6, 2);
+insert into reservation (id_reservation, date_arrived, leaving_date, number_of_person, id_client) values (2, '2022-09-30', '2023-06-26', 10, 3);
+insert into reservation (id_reservation, date_arrived, leaving_date, number_of_person, id_client) values (3, '2023-04-10', '2023-06-05', 7, 6);
+insert into reservation (id_reservation, date_arrived, leaving_date, number_of_person, id_client) values (4, '2022-07-26', '2023-04-16', 2, 8);
+insert into reservation (id_reservation, date_arrived, leaving_date, number_of_person, id_client) values (5, '2022-11-01', '2023-02-11', 1, 9);
+insert into reservation (id_reservation, date_arrived, leaving_date, number_of_person, id_client) values (6, '2022-10-21', '2023-02-14', 1, 6);
+insert into reservation (id_reservation, date_arrived, leaving_date, number_of_person, id_client) values (7, '2023-06-02', '2022-08-20', 1, 7);
+insert into reservation (id_reservation, date_arrived, leaving_date, number_of_person, id_client) values (8, '2023-01-05', '2022-08-11', 10, 9);
+insert into reservation (id_reservation, date_arrived, leaving_date, number_of_person, id_client) values (9, '2022-10-18', '2022-11-01', 7, 2);
+insert into reservation (id_reservation, date_arrived, leaving_date, number_of_person, id_client) values (10, '2022-12-25', '2023-02-08', 8, 7);
