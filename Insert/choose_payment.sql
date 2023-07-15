@@ -1,0 +1,10 @@
+insert into choose_payment (id_choose_payment, id_payment, id_payment_method) values (1, 1, 1);
+insert into choose_payment (id_choose_payment, id_payment, id_payment_method) values (2, 2, 2);
+insert into choose_payment (id_choose_payment, id_payment, id_payment_method) values (3, 3, 3);
+insert into choose_payment (id_choose_payment, id_payment, id_payment_method) values (4, 4, 4);
+insert into choose_payment (id_choose_payment, id_payment, id_payment_method) values (5, 5, 5);
+insert into choose_payment (id_choose_payment, id_payment, id_payment_method) values (6, 6, 6);
+insert into choose_payment (id_choose_payment, id_payment, id_payment_method) values (7, 7, 7);
+insert into choose_payment (id_choose_payment, id_payment, id_payment_method) values (8, 8, 8);
+insert into choose_payment (id_choose_payment, id_payment, id_payment_method) values (9, 9, 9);
+insert into choose_payment (id_choose_payment, id_payment, id_payment_method) values (10, 10, 10);

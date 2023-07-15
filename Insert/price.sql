@@ -1,0 +1,10 @@
+insert into price (id_price_by_season, cost_per_night, id_room, id_season) values (1, 2817.74, 1, 1);
+insert into price (id_price_by_season, cost_per_night, id_room, id_season) values (2, 1439.93, 2, 2);
+insert into price (id_price_by_season, cost_per_night, id_room, id_season) values (3, 1902.03, 3, 3);
+insert into price (id_price_by_season, cost_per_night, id_room, id_season) values (4, 8604.19, 4, 4);
+insert into price (id_price_by_season, cost_per_night, id_room, id_season) values (5, 3818.57, 5, 5);
+insert into price (id_price_by_season, cost_per_night, id_room, id_season) values (6, 3689.86, 6, 6);
+insert into price (id_price_by_season, cost_per_night, id_room, id_season) values (7, 2958.12, 7, 7);
+insert into price (id_price_by_season, cost_per_night, id_room, id_season) values (8, 7364.77, 8, 8);
+insert into price (id_price_by_season, cost_per_night, id_room, id_season) values (9, 429.8, 9, 9);
+insert into price (id_price_by_season, cost_per_night, id_room, id_season) values (10, 2053.06, 10, 10);
