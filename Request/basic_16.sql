@@ -1,4 +1,6 @@
-SELECT h.*, COUNT(r.id_reservation) AS reservation_count
+--Afficher l'hotel avec le plus de reservations
+SELECT h.*, COUNT(r.id_reservation) 
+AS reservation_count
 FROM hotel h
 LEFT JOIN room r ON h.id_hotel = r.id_hotel
 LEFT JOIN reservation rs ON r.id_reservation = rs.id_reservation
