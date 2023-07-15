@@ -145,7 +145,9 @@ CREATE TABLE payment (
     lending_status BOOL,
     total_amount_status BOOL,
     id_client INT,
-    FOREIGN KEY (id_client) REFERENCES client (id_client)
+    id_receptionist INT,
+    FOREIGN KEY (id_client) REFERENCES client (id_client),
+    FOREIGN KEY (id_receptionist) REFERENCES receptionist (id_receptionist)
 );
 
 CREATE TABLE payment_method (
