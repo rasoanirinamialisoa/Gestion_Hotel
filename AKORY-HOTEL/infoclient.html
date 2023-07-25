@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> AKORY HOTEL </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/fontawesome.min.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/search.css">
+        <link rel="stylesheet" href="css/result.css">
+       
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="show-menu">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#room">Rooms</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Features
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="#">VIP</a>
+                                <a class="dropdown-item" href="#">TWIN</a>
+                                <a class="dropdown-item" href="#">SIMPLE</a>
+                                <a class="dropdown-item" href="#">DOUBLE</a>
+                            </div>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="#blog">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">contacts</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <header id="home">
+            <a class="logo-home" href="index.html"><img  class="logo" src="imgs/remove_logos.png" alt="#" /> </a>
+            <div class="small-container">
+                
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                        <h2> Welcome to
+                            <br> <span> AKORY HOTEL </span></h2>
+                            <button class="about_button"> About hotel</button>
+                    </div>
+                    
+                </div>
+                <div class="h-slider welcome d-flex align-items-center justify-content-center">
+                    <div class="formulaire">
+                        <div class="search-hotels">
+                            <h2> Information </h2>
+                            <!-- Formulaire d'ajout d'information client -->
+                            <form id="newClientForm">
+                                <div class="form-group">
+                                    <label for="nom">Nom:</label>
+                                    <input type="text" id="nom" name="nom" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="prenom">Prénom:</label>
+                                    <input type="text" id="prenom" name="prenom" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="genre">Genre:</label>
+                                    <select id="genre" name="genre">
+                                        <option value="homme">H</option>
+                                        <option value="femme">F</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="telephone">Tel n°1</label>
+                                    <input type="tel" id="telephone" name="telephone" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="telephone-urgence">Tel n°2</label>
+                                    <input type="tel" id="telephone-urgence" name="telephone-urgence" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="adresse">Adresse:</label>
+                                    <input type="text" id="adresse" name="adresse" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="cin">Numéro CIN:</label>
+                                    <input type="text" id="cin" name="cin" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="email">Email:</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="password">Mot de passe:</label>
+                                    <input type="password" id="password" name="password" required>
+                                </div>
+                            </form>
+
+                            <button type="submit"> Continuer</button>
+                           
+                        </div>
+                          
+                       
+                    </div>
+                    
+                    <div id="headerslider" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item carousel-three active"></div>
+                        <div class="carousel-item carousel-two"></div>
+                        <div class="carousel-item carousel-one"></div>
+                      </div>
+                      <a class="carousel-control-prev" href="#headerslider" role="button" data-slide="prev">
+                        <i class="fas fa-angle-double-left"></i>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#headerslider" role="button" data-slide="next">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                </div>
+            </div>
+            <div class="left"></div>
+            <div class="right"></div>
+        </header>
+        
+        <div class="about bg-light">
+            <div class="container">
+                <h2 class="text-center">About our hotel</h2>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <h4>A best place to enjoy your life</h4>
+                        <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered </p>
+                        <button><a href="#">Read more</a></button>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div> 
+                            <img class="img" src="imgs/40_Anjajavy.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <h2 id="room">rooms & suits</h2>
+                <div class="row">
+                    <div class="col-lg-4 col-12">
+                        <div >
+                            <img class="img" src="imgs/majunga.png" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-8 col-12">
+                        <div class="block">
+                            <div>
+                                <strong>$405</strong>
+                                <h5>luxury rooms</h5>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                                <button><a href="#">Read more</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="slider">
+            <h2 class="text-center text-capitalize main-font-family">what our clients say</h2>
+          <div id="slideToNext" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#slideToNext" data-slide-to="0" class="active"></li>
+              <li data-target="#slideToNext" data-slide-to="1"></li>
+              <li data-target="#slideToNext" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="carousel-caption d-block">
+                    <img src="imgs/AKORY (3) - Copy.png">
+                  <h5> RASOA </h5>
+                  <p>It is a long established fact that a reader wil
+l be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-block">
+                    <img src="imgs/AKORY (3).png">
+                  <h5>RABEA</h5>
+                  <p>It is a long established fact that a reader wil
+l be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="carousel-caption d-block">
+                    <img src="imgs/pic7.png">
+                  <h5>jone due</h5>
+                  <p>It is a long established fact that a reader wil
+l be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="contact text-center">
+            <div class="container">
+                <h2 id="contact">Get in touch</h2>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="contact-form">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Phone">
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" placeholder="Message"></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <h2 class="text-right"> Avez vous des questions ? Contactez - nous !</h2>
+                    </div>
+                </div>
+            </div>
+            <div></div>
+        </div>
+        
+
+     
+        
+        <footer>
+            <div class="foot">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Useful links</h3>
+                            <ul>
+                                <li><a href="#">Home</a></li>
+                                <li><a href="#">About</a></li>
+                                <li><a href="#">Rooms</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="#">Contacts</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <h3>Find us</h3>
+                            <p>Healing Center, 176 W Street name,<br>
+                                New York, NY 10014, US<br>
+                                (+71) 987 654 3210<br>
+                                (+71) 987 654 3210<br>
+                                fivehotel@gmail.com
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-12 form">
+                            <h3>News letter</h3>
+                            <form>
+                                <input type="email"type="submit" placeholder="Email">
+                                <button type="submit"> Submit </button>
+                            </form>
+                            <ul>
+                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="copyright">
+                    <p>© 2023 All Rights Reserved. Design by DEV UNITED </p>
+                </div>
+            </div>
+            
+        </footer>
+        
+        
+
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/result.js"></script>
+        <script src="js/reserve.js"></script>
+        <script>
+            $(function () {
+                 
+                'use strict';
+                
+                var winH = $(window).height();
+                
+                $('header').height(winH);
+                
+                $('.navbar ul.navbar-nav li a').on('click', function (e) {
+                    
+                    var getAttr = $(this).attr('href');
+                    
+                    e.preventDefault();
+                    $('html').animate({scrollTop: $(getAttr).offset().top}, 1000);
+                });
+            });
+        </script>
+    </body>
+</html>
