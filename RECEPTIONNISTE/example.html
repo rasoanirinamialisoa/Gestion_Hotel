@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interface Réceptionniste</title>
+    <link rel="stylesheet" href="example.css">
+    <!-- Ajoutez vos liens vers les fichiers CSS ici -->
+    <style>
+        /* Réinitialiser les marges et les paddings */
+body, h1, h2, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style pour l'en-tête */
+  header {
+    background-color: #42b3cf;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  /* Style pour les conteneurs */
+  .container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  /* Style pour les titres h2 */
+  h2 {
+    margin-bottom: 10px;
+  }
+  
+  /* Style pour les listes de réservations */
+  .reservations ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reservations li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style pour les détails du client */
+  .client-details p {
+    margin-bottom: 5px;
+  }
+  
+  /* Style pour le formulaire d'ajout de nouveau client */
+  .new-client form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .new-client label {
+    margin-bottom: 5px;
+  }
+  
+  .new-client input, .new-client button {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .new-client button {
+    background-color: #42b3cf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .new-client button:hover {
+    background-color: #2c99b0;
+  }
+  
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Ajoutez le contenu du header ici -->
+        <h1>Interface Réceptionniste</h1>
+    </header>
+    <div class="row">
+<div>
+         <div class="container">
+        <h2>Gestion des Réservations</h2>
+        <div class="reservations">
+            <!-- Ajoutez ici la liste des réservations -->
+            <ul>
+                <li>Réservation 1 - Client A</li>
+                <li>Réservation 2 - Client B</li>
+                <!-- Ajoutez d'autres réservations ici -->
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Informations Client</h2>
+        <div class="client-details">
+            <!-- Ajoutez ici les détails du client sélectionné -->
+            <p>Nom: Client A</p>
+            <p>Email: clientA@example.com</p>
+            <p>Téléphone: 123-456-7890</p>
+            <!-- Ajoutez d'autres détails du client ici -->
+        </div>
+    </div>
+
+    </div>
+   
+    <div class="container">
+        <h2>Ajouter un Nouveau Client</h2>
+        <div class="new-client">
+            <!-- Ajoutez ici le formulaire pour ajouter un nouveau client -->
+            <form>
+                <label for="nom">Nom:</label>
+                <input type="text" id="nom" name="nom" required>
+        
+                <label for="prenom">Prénom:</label>
+                <input type="text" id="prenom" name="prenom" required>
+        
+                <label for="genre">Genre:</label>
+                <select id="genre" name="genre">
+                    <option value="homme">Homme</option>
+                    <option value="femme">Femme</option>
+                    <option value="autre">Autre</option>
+                </select>
+        
+                <label for="telephone">Numéro de téléphone:</label>
+                <input type="tel" id="telephone" name="telephone" required>
+        
+                <label for="telephone-urgence">Numéro de téléphone d'urgence:</label>
+                <input type="tel" id="telephone-urgence" name="telephone-urgence">
+        
+                <label for="adresse">Adresse:</label>
+                <input type="text" id="adresse" name="adresse">
+        
+                <label for="cin">Numéro de CIN:</label>
+                <input type="text" id="cin" name="cin">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="password">Mot de passe:</label>
+                <input type="password" id="password" name="password" required>
+        
+                <button type="submit">Ajouter</button>
+            </form>
+        </div>
+        
+    </div>
+    </div>
+    
+
+    <footer>
+        <!-- Ajoutez le contenu du footer ici -->
+        <p>Tous droits réservés - Interface Réceptionniste</p>
+    </footer>
+</body>
+</html>

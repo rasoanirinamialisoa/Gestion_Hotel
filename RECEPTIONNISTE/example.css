@@ -1,0 +1,45 @@
+
+  
+  /* Style pour les listes de réservations */
+  .reservations ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .reservations li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Style pour les détails du client */
+  .client-details p {
+    margin-bottom: 5px;
+  }
+  
+  /* Style pour le formulaire d'ajout de nouveau client */
+  .new-client form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .new-client label {
+    margin-bottom: 5px;
+  }
+  
+  .new-client input, .new-client button {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .new-client button {
+    background-color: #42b3cf;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .new-client button:hover {
+    background-color: #2c99b0;
+  }
+  
