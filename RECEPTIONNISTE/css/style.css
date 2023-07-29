@@ -1,0 +1,43 @@
+body {
+    overflow-x: hidden;
+}
+
+li {
+    list-style-type: none;
+}
+
+a:hover {
+    text-decoration: none
+}
+
+body {
+    font-size: 1.2rem;
+    font-family: 'Lobster', cursive;;
+}
+
+.small-container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.foot {
+    background-color: rgba(35, 35, 56, 0.9);
+    width: 100%;
+    height: auto;
+}
+
+/* logo */
+
+.logo{
+    width: 200px;
+    height: 200px;
+}
+
+
+
+
+
+
+
+
+
