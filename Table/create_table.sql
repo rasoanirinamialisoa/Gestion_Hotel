@@ -22,7 +22,7 @@ CREATE TABLE client (
     gender CHAR(1),
     CIN VARCHAR (200),
     Email VARCHAR(100),
-    Password VARCHAR(5),
+    Password VARCHAR(50),
     id_employee INT,
     FOREIGN KEY (id_employee) REFERENCES receptionist (id_employee)
 );
@@ -190,3 +190,14 @@ ALTER TABLE receptionist
 ADD COLUMN id_hotel INT,
 ADD CONSTRAINT fk_receptionist_hotel
 FOREIGN KEY (id_hotel) REFERENCES hotel (id_hotel);
+
+-- Changer en varchar (50) le password de client et receptionist
+ALTER TABLE client
+ALTER COLUMN password TYPE VARCHAR(50);
+
+ALTER TABLE receptionist
+ALTER COLUMN password TYPE VARCHAR(50);
+
+
+
+
