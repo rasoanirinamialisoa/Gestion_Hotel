@@ -1,0 +1,67 @@
+/* Sidebar Styles */
+.sidebar {
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  position: fixed;
+  top: 100px; /* Adjust this value to create some space at the top */
+  left: 0;
+  z-index: 999;
+  overflow-y: auto;
+  transition: all 0.3s ease;
+}
+
+.sidebar-inner {
+  padding: 20px;
+}
+
+/* Main Menu Styles */
+#sidebar-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar-menu ul li {
+  position: relative;
+}
+
+#sidebar-menu ul li a {
+  display: block;
+  padding: 10px 15px;
+  color: #333;
+  text-decoration: none;
+  
+}
+
+#sidebar-menu ul li a:hover {
+  background-color: rgb(183, 137, 231);
+  border-radius: 3ch;
+}
+
+#sidebar-menu ul li.active a {
+  background-color: #ddd;
+  font-weight: bold;
+}
+
+/* Submenu Styles */
+.submenu {
+  padding-left: 20px;
+}
+
+.submenu_class {
+  display: none;
+}
+
+.submenu_class li a {
+  padding-left: 35px;
+}
+
+/* Scrollbar Styles */
+.slimscroll {
+  overflow: hidden;
+  position: relative;
+  height: calc(100% - 60px); /* Adjust the height to account for the top spacing */
+}
+
+/* Add scrollbar styling based on your preferences */
