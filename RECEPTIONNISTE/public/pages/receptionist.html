@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="icon" type="image/png" href="../assets/img/AKORY (3) - Copy.png">
+  <title>
+    AKORY-HOTEL-ADMIN
+  </title>
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" />
+  <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/dropomenu.css">
+  <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
+  <script src="../js/crud.js" defer></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
+
+</head>
+
+
+<body class="sidenav-show  bg-gray-100">
+  <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 "
+    id="sidenav-main">
+    <div class="sidenav-header">
+      <a class="m-0" href=" hotel.html ">
+        <img src="../assets/img/AKORY (3) - Copy.png" class="logo h-200" alt="main_logo">
+      </a>
+    </div>
+    <hr class="horizontal dark mt-0">
+
+    <div class="sidebar descend" id="sidebar">
+      <div class="sidebar-inner slimscroll">
+        <div id="sidebar-menu" class="sidebar-menu">
+          <ul>
+            <li class="active"> <a href="dashboard.html"><i class="fas fa-columns"></i>
+                <span> Tableau de bord </span></a> </li>
+            <li class="list-divider"></li>
+            <li class="submenu"> <a href="#"></i> <i class="bi-people"></i> <span> Clients </span> <span
+                  class="menu-arrow"></span></a>
+              <ul class="submenu_class none">
+                <li><a href="allClient.html"> Tous les clients </a></li>
+                <li><a href="addClient.html"> Ajouter </a></li>
+                <li><a href="updateClient.html"> Modifier </a></li>
+              </ul>
+            </li>
+            <li class="submenu"> <a href="#"><i class="fas fa-book"></i> <span> Réservation </span> <span
+                  class="menu-arrow"></span></a>
+              <ul class="submenu_class none">
+                <li><a href="allBook.html"> Toutes les réservations </a></li>
+                <li><a href="addBook.html"> Ajouter </a></li>
+                <li><a href="updateBook.html"> Modifier </a></li>
+              </ul>
+            </li>
+            <li class="submenu"> <a href="#"><i class="bi-door-open"></i> <span> Chambres </span> <span
+                  class="menu-arrow"></span></a>
+              <ul class="submenu_class none">
+                <li><a href="allRooms.html"> Tous les chambres </a></li>
+                <li><a href="addRooms.html"> Ajouter </a></li>
+                <li><a href="updateRoom.html"> Modifier </a></li>
+              </ul>
+            </li>
+            <li class="submenu"> <a href="#"><i class="bi-person-badge"></i> <span> Employees </span> <span
+                  class="menu-arrow"></span></a>
+              <ul class="submenu_class none">
+                <li><a href="allEmployee.html"> Tous les employees </a></li>
+                <li><a href="addEmployee.html"> Ajouter </a></li>
+                <li><a href="updateEmployee.html"> Supprimer </a></li>
+              </ul>
+            </li>
+            </li>
+            <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Comptes </span>
+                <span class="menu-arrow"></span></a>
+              <ul class="submenu_class none">
+                <li><a href="payment.html"> Paiements </a></li>
+                <li><a href="modePayement.html"> Méthodes de paiements</a></li>
+              </ul>
+            </li>
+
+            <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Offres </span>
+              <span class="menu-arrow"></span></a>
+            <ul class="submenu_class none">
+              <li><a href="promotion.html"> Promotions </a></li>
+              <li><a href="offreSaisonner.html"> Offes Saisonner</a></li>
+            </ul>
+          </li>
+          
+          <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Hotel </span>
+            <span class="menu-arrow"></span></a>
+          <ul class="submenu_class none">
+            <li><a href="allHotel.html"> Tous les hotels </a></li>
+            <li><a href="addHotel.html"> Ajouter </a></li>
+          </ul>
+        </li>
+            
+            <li class="submenu"> <a href="services.html"><i class="bi bi-display"></i> <span> Services </span></a>
+            </li>
+          
+            <li class="submenu"> <a href="offres.html"><i class="bi bi-display"></i> <span> Offres </span></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+  </aside>
+  <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
+    <div class="container position-sticky z-index-sticky top-0">
+      <div class="row">
+        <div class="col-12">
+          <!-- Navbar -->
+          <nav
+            class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
+            <div class="container">
+        <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-dark" href="../pages/dashboard.html">
+          AKORY HOTEL
+        </a>
+        <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+          data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon mt-2">
+            <span class="navbar-toggler-bar bar1"></span>
+            <span class="navbar-toggler-bar bar2"></span>
+            <span class="navbar-toggler-bar bar3"></span>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navigation">
+          <ul class="navbar-nav mx-auto ms-xl-auto me-xl-7">
+            <li class="nav-item">
+              <a class="nav-link d-flex align-items-center me-2 active" aria-current="page"
+                href="../pages/dashboard.html">
+                <i class="fa fa-chart-pie opacity-6  me-1"></i>
+                Tableau de bord
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="../pages/profile.html">
+                <i class="fa fa-user opacity-6  me-1"></i>
+                Profile
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="../pages/sign-up.html">
+                <i class="fas fa-user-circle opacity-6  me-1"></i>
+                Inscrivez-vous
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link me-2" href="../pages/sign-in.html">
+                <i class="fas fa-key opacity-6  me-1"></i>
+                Connecter
+              </a>
+            </li>
+          </ul>
+          <li class="nav-item d-flex align-items-center">
+            <a class="btn btn-round btn-sm mb-0 btn-outline-primary me-2" target="_blank"
+              href="https://www.creative-tim.com/builder?ref=navbar-soft-ui-dashboard"> Votre compte </a>
+          </li>
+          <ul class="navbar-nav d-lg-block d-none">
+            <li class="nav-item">
+              <a href="https://www.creative-tim.com/product/soft-ui-dashboard"
+                class="btn btn-sm btn-round mb-0 me-1 bg-gradient-dark">Connecter </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+          </nav>
+          <!-- End Navbar -->
+        </div>
+      </div>
+    </div>
+    <!-- tête table -->
+
+    <div class="descend2">
+
+      <h1>Liste des clients</h1>
+      <table>
+        <thead>
+          <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Contact principal</th>
+            <th>Adresse</th>
+            <th>Numéro d'urgence</th>
+            <th>Genre</th>
+            <th>CIN</th>
+            <th>Email</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="clientsTableBody">
+          <!-- Les données des clients seront ajoutées ici -->
+        </tbody>
+      </table>
+
+    </div>
+
+
+  </main>
+
+
+
+  <!--   Core JS Files   -->
+  <script src="../assets/js/core/popper.min.js"></script>
+  <script src="../assets/js/core/bootstrap.min.js"></script>
+  <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
+  <script src="../assets/js/plugins/drop.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      // Toggle submenu when clicked
+      $(".submenu > a").on("click", function (e) {
+        e.preventDefault(); // Prevent the default behavior of the link
+        var $this = $(this);
+        var $submenu = $this.next(".submenu_class");
+
+        // Close other open submenus
+        $(".submenu_class").not($submenu).slideUp("fast");
+        $(".submenu > a").not($this).parent().removeClass("active");
+        $(".menu-arrow").removeClass("rotate");
+
+        // Toggle the clicked submenu
+        $this.parent().toggleClass("active");
+        $submenu.slideToggle("fast");
+        $this.find(".menu-arrow").toggleClass("rotate");
+      });
+
+      // Close menu when clicking outside
+      $(document).on("click", function (e) {
+        var $target = $(e.target);
+        if (!$target.closest(".sidebar").length) {
+          $(".submenu_class").slideUp("fast");
+          $(".submenu > a").parent().removeClass("active");
+          $(".menu-arrow").removeClass("rotate");
+        }
+      });
+    });
+  </script>
+ 
+
+
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</body>
+
+</html>
