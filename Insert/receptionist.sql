@@ -1,22 +1,100 @@
-INSERT INTO receptionist (first_name, last_name, Password, email, work_contact)
-VALUES
-  ('Jayne', 'Bubbear', '6Hds7w89', 'jbubbear0@npr.org', '0322249507'),
-  ('Kaine', 'Balleine', '3LYQzEZ4', 'kballeine1@g.co', '0331719233'),
-  ('Reider', 'Quiddington', '2Af9l5i8', 'rquiddington2@a8.net', '0347748159'),
-  ('Justinn', 'Dorning', 'Jzhb2Y5K', 'jdorning3@altervista.org', '0345477641'),
-  ('Skelly', 'Henlon', 'FKi1O8B3', 'shenlon4@boston.com', '0343505690'),
-  ('Myrtice', 'Gentery', '5Kb4e1yh', 'mgentery5@army.mil', '0332960377'),
-  ('Maggy', 'Sneddon', 'Y5e3hfOW', 'msneddon6@google.de', '0320822161'),
-  ('Tristam', 'Debnam', 'F0Q1loUS', 'tdebnam7@godaddy.com', '0343437197'),
-  ('Jimmie', 'Dumingos', '5z4e2ZT3', 'jdumingos8@eepurl.com', '0342685998'),
-  ('Shanon', 'Whyke', 'sIZi09z3', 'swhyke9@linkedin.com', '0320720054'),
-  ('Jordan', 'Turner', 'R7lX3g6j', 'jturnera@goo.gl', '0321474731'),
-  ('Marcella', 'Rieger', '3g2WphD7a', 'mriegerb@symantec.com', '0334903053'),
-  ('Ole', 'Darree', '03OGr3m9z', 'odarreec@wikimedia.org', '0339265067'),
-  ('Antonina', 'Ham', 'G6SdrZYz', 'ahamd@hibu.com', '0349781865'),
-  ('Marielle', 'Ingham', '82X9tWKQgX', 'minghame@eepurl.com', '0348258103'),
-  ('Barclay', 'Veregan', '83F98hXe', 'bveregang@pbs.org', '0341916831'),
-  ('Lizette', 'Borkin', 'ZQd6fwun', 'lborkinh@51.la', '0338919461'),
-  ('Gwennie', 'Dumsday', '9fFSMYyEPB', 'gdumsdayi@over-blog.com', '0338412844'),
-  ('Maxie', 'Spohrmann', 'Vys9IFQ', 'mspohrmannj@phoca.cz', '0334636764'),
-  ('Kippy', 'Shipp', 'KJ5Qdny1', 'kshippk@merriam-webster.com', '0347123483');
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (1, 'Ced', 'Harry', 'zB9IZ4"EQp', 'charry0@jugem.jp', '6617625197', 1);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (2, 'Carmelle', 'Noton', 'gN5y|8_$opN25', 'cnoton1@tripadvisor.com', '6038690468', 2);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (3, 'Dominique', 'Shackle', 'gU0t4=6{d&yjJBYq', 'dshackle2@nydailynews.com', '7833779219', 3);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (4, 'Elmira', 'Diwell', 'kV3gL"uPbNm', 'ediwell3@omniture.com', '1893344811', 4);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (5, 'Ashby', 'Trayhorn', 'mT4en3Aj@CA''e_o', 'atrayhorn4@go.com', '9319401217', 5);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (6, 'Con', 'Stryde', 'jA3t"!l4O$P_.Vw', 'cstryde5@aboutads.info', '2294346922', 6);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (7, 'Valene', 'Duplock', 'bR7J$U#u2aT>K_4\', 'vduplock6@smh.com.au', '8538125513', 7);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (8, 'Ingemar', 'Georges', 'pW6mv$og', 'igeorges7@bing.com', '5026475251', 8);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (9, 'Bridie', 'Doulden', 'mT2P\Ulc', 'bdoulden8@forbes.com', '4202045710', 9);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (10, 'Kaylyn', 'Egdal', 'jW0V)T2Tw|*z', 'kegdal9@delicious.com', '5492324127', 10);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (11, 'Binni', 'Dymond', 'gD52<0ILN', 'bdymonda@bandcamp.com', '6572547869', 11);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (12, 'Celestina', 'Uvedale', 'cO39>MuL@PwyQoLd', 'cuvedaleb@gizmodo.com', '3494257059', 12);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (13, 'Harv', 'Alcorn', 'tA61u8dm`"4nq', 'halcornc@wordpress.org', '6075339527', 13);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (14, 'Jeanette', 'Lyal', 'gN6k39o)H,e7D`', 'jlyald@census.gov', '7942593950', 14);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (15, 'Hanan', 'Poter', 'hZ0dZuT#', 'hpotere@example.com', '4794545080', 15);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (16, 'Paolina', 'Charteris', 'sP0&CY<RyRt#', 'pcharterisf@drupal.org', '5391525476', 16);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (17, 'Clarice', 'Honisch', 'tQ9iEBU5XtFOI8M', 'chonischg@opera.com', '9937178783', 17);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (18, 'Bebe', 'O'' Donohoe', 'lX3Ll0+k)Q6R', 'bodonohoeh@google.co.jp', '1974411902', 18);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (19, 'Husein', 'Bilborough', 'wV32sCl+lidw(''', 'hbilboroughi@cafepress.com', '1529436898', 19);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (20, 'Benn', 'Polamontayne', 'dK8*zxlvCcE7y?8', 'bpolamontaynej@businessinsider.com', '8891739380', 20);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (21, 'Frannie', 'Wipfler', 'pW6`b>Q}K*lecR', 'fwipflerk@studiopress.com', '9249598908', 21);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (22, 'Maxwell', 'Gaitskell', 'aK4zb"X<!LZHP`u', 'mgaitskelll@goodreads.com', '8521633423', 22);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (23, 'Alicia', 'Feckey', 'oD1$/G{VyEy4J}2', 'afeckeym@exblog.jp', '1846901310', 23);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (24, 'Bert', 'Dare', 'nW9P"g#~J', 'bdaren@house.gov', '1993647714', 24);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (25, 'Olav', 'Leinster', 'eJ6S%Vx%rg', 'oleinstero@blogtalkradio.com', '2278115704', 25);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (26, 'Adolphe', 'Klausewitz', 'pZ5sGn}f>/(p=', 'aklausewitzp@miibeian.gov.cn', '1711704623', 26);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (27, 'Terrel', 'Perutto', 'nC5LmKtE$uAv', 'tperuttoq@a8.net', '1467915272', 27);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (28, 'Mathilde', 'Duny', 'jE16TW/Y', 'mdunyr@yahoo.com', '9557204078', 28);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (29, 'Dare', 'Whanstall', 'eP2KnD6jGvCtKJ', 'dwhanstalls@php.net', '7565114731', 29);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (30, 'Abramo', 'Messent', 'cC7zo_\kw`#C%s<', 'amessentt@prweb.com', '2631043988', 30);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (31, 'Ashleigh', 'Hawkridge', 'bY2W&j5x9d{Yzv6~', 'ahawkridgeu@google.com.au', '2695928233', 31);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (32, 'Frieda', 'Biglin', 'oN0HAdV!n\$i"9$', 'fbiglinv@artisteer.com', '9463360552', 32);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (33, 'Cris', 'Luckings', 'kX4!Dfh#@JGI,9', 'cluckingsw@prlog.org', '6077043763', 33);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (34, 'Danila', 'Whapham', 'sF9Hr/~Ka%$",', 'dwhaphamx@shinystat.com', '5074185866', 34);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (35, 'Zandra', 'Clapshaw', 'gO5c0sX"e/Ph*LI', 'zclapshawy@google.de', '9874157860', 35);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (36, 'Richardo', 'Blacklidge', 'yP4Z+.4mi)h7aq*', 'rblacklidgez@bloomberg.com', '9326263884', 36);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (37, 'Sybil', 'Fall', 'gH5GDjS1Y<8,D2|', 'sfall10@yellowpages.com', '9872661870', 37);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (38, 'Meryl', 'Skurray', 'xJ3}_}7A/RF}Y"', 'mskurray11@about.me', '5741670669', 38);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (39, 'Enos', 'Seldner', 'kD1y(#X+KaAv', 'eseldner12@tinypic.com', '9482893118', 39);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (40, 'Eolande', 'Dearman', 'sB7U_0?+XTi<$', 'edearman13@trellian.com', '8897506701', 40);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (41, 'Leontyne', 'Gaddas', 'gX1\Z"ei!Lji', 'lgaddas14@hostgator.com', '8535179296', 41);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (42, 'Rowena', 'Dootson', 'qT06_tZ9I,K', 'rdootson15@va.gov', '4834443908', 42);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (43, 'Bridie', 'Goscar', 'iK5<WV5xTW10maX', 'bgoscar16@hugedomains.com', '8327818051', 43);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (44, 'Lizette', 'Huikerby', 'eV1H`35*M$', 'lhuikerby17@photobucket.com', '4739091930', 44);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (45, 'Alexandrina', 'Lippiatt', 'iL7BIC49vN~+A', 'alippiatt18@studiopress.com', '5949022409', 45);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (46, 'Enos', 'Risebrow', 'zF0h$0d"', 'erisebrow19@loc.gov', '4941797079', 46);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (47, 'Vivian', 'Ryrie', 'yE0?Z1vg', 'vryrie1a@about.com', '3866160476', 47);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (48, 'Marcos', 'Hirtzmann', 'iT6OlA<2@1', 'mhirtzmann1b@telegraph.co.uk', '1976369304', 48);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (49, 'Olva', 'Tomlin', 'zQ7r&bH2L*', 'otomlin1c@mozilla.org', '6942479557', 49);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (50, 'Madelin', 'Ishaki', 'wV0Gr!5!WG0$a,', 'mishaki1d@mapquest.com', '2017858485', 50);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (51, 'Reece', 'Brougham', 'iQ7a@0mD{AlM', 'rbrougham1e@youku.com', '3979335796', 51);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (52, 'Faustine', 'O''Dowling', 'oH6DZ!Q,8|q%''ES', 'fodowling1f@europa.eu', '1294274906', 52);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (53, 'Ula', 'Knowles', 'cC4nU<`auNv!&6', 'uknowles1g@ucoz.com', '2156738342', 53);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (54, 'Vi', 'Swale', 'tZ7Ai(=(D/+i|', 'vswale1h@uol.com.br', '8056282683', 54);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (55, 'Hunfredo', 'Colnet', 'kY0glVtC', 'hcolnet1i@blogspot.com', '7748084264', 55);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (56, 'Rab', 'Jakubovski', 'bA8u2##v~C7erV5', 'rjakubovski1j@xing.com', '6553806387', 56);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (57, 'Shaina', 'Walkling', 'wR0Mkp7\+tA(g', 'swalkling1k@photobucket.com', '1501198785', 57);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (58, 'Fee', 'Gehricke', 'vV4"c|Dp=dYf', 'fgehricke1l@twitter.com', '5064436126', 58);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (59, 'Audra', 'MacNamara', 'aL0|dT@40Bj', 'amacnamara1m@china.com.cn', '9742048244', 59);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (60, 'Fredrika', 'Melwall', 'kD6/)b2HM"', 'fmelwall1n@networksolutions.com', '1437382115', 60);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (61, 'Shepard', 'Grinyakin', 'uV8l~rtGK@{uWU1', 'sgrinyakin1o@issuu.com', '3316597994', 61);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (62, 'Theodora', 'Surgener', 'cX9yT4y}', 'tsurgener1p@odnoklassniki.ru', '4342362849', 62);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (63, 'Tatiania', 'Stiffell', 'sK6v!aCBu''8m', 'tstiffell1q@google.co.uk', '8791326045', 63);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (64, 'Dana', 'Arnowicz', 'uK4~6DHz\''N,', 'darnowicz1r@topsy.com', '5865094484', 64);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (65, 'Drona', 'Harvard', 'sG8q6L.!E1%z6r9', 'dharvard1s@nhs.uk', '1281071541', 65);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (66, 'Chandra', 'Brandsma', 'fS8Ti0RQBG@+mb', 'cbrandsma1t@de.vu', '1526466255', 66);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (67, 'Wynny', 'Colleton', 'pA176!?R4n', 'wcolleton1u@sciencedaily.com', '1118143903', 67);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (68, 'Aryn', 'Carrel', 'iA9''*GS5Z2iG?e0', 'acarrel1v@homestead.com', '3582875653', 68);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (69, 'Harwell', 'Hambatch', 'dA48N)6tROWr', 'hhambatch1w@canalblog.com', '8568684554', 69);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (70, 'Gwennie', 'Southward', 'oV8z*}e1.U8\D=', 'gsouthward1x@princeton.edu', '2795430349', 70);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (71, 'Thorn', 'Belshaw', 'sO3AnX7tJYqu', 'tbelshaw1y@tumblr.com', '7239618637', 71);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (72, 'Shandy', 'Stafford', 'sF5c2yC<GFw+lu', 'sstafford1z@scientificamerican.com', '8637187962', 72);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (73, 'Spenser', 'Hallstone', 'oF6+~Zys7G', 'shallstone20@qq.com', '3808800203', 73);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (74, 'Horatia', 'Commin', 'qL0z+#im%#''aQq', 'hcommin21@ask.com', '3783411696', 74);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (75, 'Umeko', 'Eskell', 'sK0oQpOTFT(JeH', 'ueskell22@time.com', '2738587340', 75);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (76, 'Joanne', 'Millsap', 'gC0''kDx/', 'jmillsap23@springer.com', '2473171411', 76);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (77, 'Hurley', 'Boreham', 'aA6r,y*XvM%I', 'hboreham24@go.com', '4682585495', 77);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (78, 'Wes', 'Lochet', 'nF4%$PBghX)', 'wlochet25@quantcast.com', '6394017533', 78);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (79, 'Willamina', 'Elkington', 'qD61knhssp22eN', 'welkington26@exblog.jp', '3255356706', 79);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (80, 'Haskell', 'Walby', 'gA6rGY@Da', 'hwalby27@is.gd', '3846558720', 80);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (81, 'Teddie', 'Morgen', 'nL1<TWDTct}PW', 'tmorgen28@qq.com', '2324545468', 81);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (82, 'Mala', 'Willshear', 'yG1l(P\B2', 'mwillshear29@dyndns.org', '1745889457', 82);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (83, 'Linell', 'McParland', 'zE1GR,sL0', 'lmcparland2a@abc.net.au', '7277083186', 83);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (84, 'Rodge', 'O''Rudden', 'sY0Q4v`!@Z%~y~O', 'rorudden2b@csmonitor.com', '5312344200', 84);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (85, 'Ulick', 'Stroban', 'xT8"s_MUg', 'ustroban2c@nymag.com', '9309877350', 85);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (86, 'Reinhold', 'Endon', 'wA0$6(*+B~>', 'rendon2d@posterous.com', '9303299220', 86);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (87, 'Ame', 'Aleswell', 'wC9&9U''I', 'aaleswell2e@go.com', '8197882094', 87);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (88, 'Joel', 'Pearcey', 'cP10Z\7U)"nS&>w5', 'jpearcey2f@sitemeter.com', '1983011715', 88);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (89, 'Norby', 'Sultan', 'iB0D"uvSXE!{', 'nsultan2g@va.gov', '6909885648', 89);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (90, 'Mattie', 'Franzen', 'lB1,6+*i+26~&g*(', 'mfranzen2h@sun.com', '2494070290', 90);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (91, 'Junie', 'Mastrantone', 'nC5w+uup5', 'jmastrantone2i@weebly.com', '5285415153', 91);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (92, 'Yehudi', 'Morffew', 'jX3c{PcEV', 'ymorffew2j@desdev.cn', '7384536491', 92);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (93, 'Florance', 'Cardiff', 'yK9@eb(8H%.', 'fcardiff2k@over-blog.com', '7712059385', 93);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (94, 'Alain', 'Witheridge', 'mC1W}W?n5~BeG', 'awitheridge2l@stumbleupon.com', '3055965389', 94);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (95, 'Rad', 'Lafoy', 'qC2ZL)/%', 'rlafoy2m@twitter.com', '5989611499', 95);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (96, 'Charles', 'Anglish', 'gQ3$mewEKkna*&', 'canglish2n@wikimedia.org', '2332670821', 96);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (97, 'Herbie', 'Millea', 'oD9jd=+r+', 'hmillea2o@walmart.com', '4795678027', 97);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (98, 'Francesca', 'Haacker', 'dM8.*$}C|{w&cdu$', 'fhaacker2p@usa.gov', '4524973245', 98);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (99, 'Glad', 'Fosse', 'kO3zFNW+p', 'gfosse2q@ustream.tv', '9698347129', 99);
+insert into receptionist (id_employee, first_name, last_name, Password, email, work_contact, id_hotel) values (100, 'Evy', 'Goard', 'yJ4p\f./J%$3=8#<', 'egoard2r@angelfire.com', '2449439675', 100);
