@@ -15,17 +15,20 @@ const getClients = (req, res) => {
 
 // Fonction pour obtenir un client par son ID
 const getClientById = (req, res) => {
-  const clientId = req.params.id;
+  const clientId = req.params.id_client;
   const query = 'SELECT * FROM client WHERE id_client = $1';
   db.query(query, [clientId], (err, results) => {
     if (err) {
       console.error('Erreur lors de la récupération du client:', err);
-      res.sendStatus(500);
+      res.send({
+        error:true,
+        message:err.message
+        });
     } else {
       if (results.rows.length === 1) {
         res.json(results.rows[0]);
       } else {
-        res.sendStatus(404);
+        res.send("No data found ",req.params.id_client);
       }
     }
   });
@@ -39,6 +42,7 @@ const updateClient = (req, res) => {
   db.query(query, [name, last_name, principal_contact, address, emergency_number, gender, cin, email, id_client], (err, results) => {
     if (err) {
       console.error('Erreur lors de la mise à jour du client:', err);
+      console.log('NOOOOONNN', err);
       res.sendStatus(500);
     } else {
       res.sendStatus(200);
@@ -55,7 +59,7 @@ const addClient = (req, res) => {
       console.error('Erreur lors de l\'ajout du client:', err);
       res.sendStatus(500);
     } else {
-      res.sendStatus(200);
+      res.redirect('/pages/allClient.html');
     }
   });
 };

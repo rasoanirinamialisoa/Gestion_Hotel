@@ -13,14 +13,18 @@
   <link href="../assets/css/nucleo-icons.css" rel="stylesheet" />
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <script src="https://kit.fontawesome.com/42d5adcbca.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../assets/css/styles.css">
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/dropomenu.css">
   <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
-  <link rel="stylesheet" href="../assets/css/styles.css">
+  <script src="../js/crud.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
-
+  <script src="../js/scrollmenus.js" defer></script>
+  <script src="../js/crud.js" defer></script>
+  <script src="../js/crudReservation.js" defer></script>
 </head>
+
 
 <body class="sidenav-show  bg-gray-100">
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 "
@@ -105,9 +109,8 @@
         </div>
       </div>
     </div>
+
   </aside>
-
-
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
     <div class="container position-sticky z-index-sticky top-0">
       <div class="row">
@@ -172,119 +175,78 @@
         </div>
       </div>
     </div>
-    <!-- VOUS POUVEZ CREER LA FORMULAIRE ICI -->
-    <div class="container mt-5 descend2">
-      <div class="row justify-content-center">
-        <div class="col-lg-6">
-          <div class="card">
-            <div class="card-header bg-primary text-white">
-              Formulaire d'ajout d'un nouveau client
+    <!-- tête table -->
+
+    <div class="descend2">
+
+        <!-- End Navbar -->
+
+         <!-- table -->
+
+    <div class="container-fluid py-4">
+      <div class="row">
+        <div class="col-12">
+          <div class="card mb-4">
+            <div class="card-header pb-0">
+              <h6> Liste des chambres</h6>
             </div>
-            <div class="card-body">
-              <form>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label for="name" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="name" required>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="last_name" class="form-label">Prénom</label>
-                    <input type="text" class="form-control" id="last_name" required>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label for="principal_contact" class="form-label">Contact principal</label>
-                    <input type="text" class="form-control" id="principal_contact" required>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="address" class="form-label">Adresse</label>
-                    <input type="text" class="form-control" id="address" required>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label for="emergency_number" class="form-label">Numéro d'urgence</label>
-                    <input type="text" class="form-control" id="emergency_number" required>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="gender" class="form-label">Genre</label>
-                    <select class="form-select" id="gender" required>
-                      <option value="M">Masculin</option>
-                      <option value="F">Féminin</option>
-                    </select>
-                  </div>
-                </div>
-                <div class="row mb-3">
-                  <div class="col-md-6">
-                    <label for="CIN" class="form-label">Numéro de CIN</label>
-                    <input type="number" class="form-control" id="CIN" required>
-                  </div>
-                  <div class="col-md-6">
-                    <label for="Email" class="form-label">Adresse e-mail</label>
-                    <input type="email" class="form-control" id="Email" required>
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Ajouter</button>
-              </form>
+            <div class="card-body px-0 pt-0 pb-2">
+              <div class="table-responsive p-0">
+                <table class="table align-items-center mb-0">
+
+                  <thead>
+                    <tr>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Numéro de chambre</th>
+                      <th class="text-uppercase text-secondary text-xxs font-weight-bolder opacity-7 ps-2"> Type de chambre</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Capacité</th>
+                      <th class="text-center text-uppercase text-secondary text-xxs font-weight-bolder opacity-7">Actions</th>
+                     
+                    </tr>
+                  </thead>
+                  
+                  <tbody id="roomsTablesBody">
+                    
+                  </tbody>
+
+                </table>
+              </div>
             </div>
           </div>
         </div>
       </div>
+   
+      <footer class="footer pt-3  ">
+        <div class="container-fluid">
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 mb-lg-0 mb-4 row">
+              <div class="copyright text-center text-sm text-muted text-lg-start">
+               
+                Tous droit réservé, fait avec <i class="fa fa-heart"></i> de
+                <span class="font-weight-bold" target="_blank">Dev United</span>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+      </footer>
+    </div>
+    <!-- en table -->
+    
     </div>
 
 
-
-
-
-
   </main>
-
   <!--   Core JS Files   -->
   <script src="../assets/js/core/popper.min.js"></script>
   <script src="../assets/js/core/bootstrap.min.js"></script>
   <script src="../assets/js/plugins/perfect-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/smooth-scrollbar.min.js"></script>
   <script src="../assets/js/plugins/drop.js"></script>
-
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      // Toggle submenu when clicked
-      $(".submenu > a").on("click", function (e) {
-        e.preventDefault(); // Prevent the default behavior of the link
-        var $this = $(this);
-        var $submenu = $this.next(".submenu_class");
-
-        // Close other open submenus
-        $(".submenu_class").not($submenu).slideUp("fast");
-        $(".submenu > a").not($this).parent().removeClass("active");
-        $(".menu-arrow").removeClass("rotate");
-
-        // Toggle the clicked submenu
-        $this.parent().toggleClass("active");
-        $submenu.slideToggle("fast");
-        $this.find(".menu-arrow").toggleClass("rotate");
-      });
-
-      // Close menu when clicking outside
-      $(document).on("click", function (e) {
-        var $target = $(e.target);
-        if (!$target.closest(".sidebar").length) {
-          $(".submenu_class").slideUp("fast");
-          $(".submenu > a").parent().removeClass("active");
-          $(".menu-arrow").removeClass("rotate");
-        }
-      });
-    });
-  </script>
-
-
-
   <script async defer src="https://buttons.github.io/buttons.js"></script>
-
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 </body>
 
 </html>

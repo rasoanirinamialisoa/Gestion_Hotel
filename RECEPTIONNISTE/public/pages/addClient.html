@@ -180,55 +180,58 @@
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <div class="card">
-            <div class="card-header bg-primary text-white">
-              Formulaire d'ajout d'un nouveau client
+            <div class="card-header bg-gradient-primary text-white">
+              Ajouter un nouveau client
             </div>
             <div class="card-body">
-              <form>
+              <form role="form" action="/submitClient" method="POST" id="addClientForm">
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label for="name" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="name" required>
+                    <input type="text" class="form-control" placeholder="Nom" id="name" name="name" required>
                   </div>
                   <div class="col-md-6">
                     <label for="last_name" class="form-label">Prénom</label>
-                    <input type="text" class="form-control" id="last_name" required>
+                    <input type="text" class="form-control" placeholder="Prénom" id="last_name" name="last_name" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label for="principal_contact" class="form-label">Contact principal</label>
-                    <input type="text" class="form-control" id="principal_contact" required>
+                    <input type="contact" class="form-control" placeholder="Numéro 1" id="principal_contact" name="principal_contact" required>
                   </div>
                   <div class="col-md-6">
                     <label for="address" class="form-label">Adresse</label>
-                    <input type="text" class="form-control" id="address" required>
+                    <input type="text" class="form-control" placeholder="Adresse" id="address" name="address" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label for="emergency_number" class="form-label">Numéro d'urgence</label>
-                    <input type="text" class="form-control" id="emergency_number" required>
+                    <input type="contact" class="form-control" placeholder="Numéro 2" id="emergency_number" name="emergency_number" required>
                   </div>
                   <div class="col-md-6">
                     <label for="gender" class="form-label">Genre</label>
-                    <select class="form-select" id="gender" required>
-                      <option value="M">Masculin</option>
-                      <option value="F">Féminin</option>
+                    <select class="form-select" id="gender"  name="gender" required>
+                      <option value="M">M</option>
+                      <option value="F">F</option>
                     </select>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label for="CIN" class="form-label">Numéro de CIN</label>
-                    <input type="number" class="form-control" id="CIN" required>
+                    <input type="number" class="form-control" placeholder="CIN" id="cin" name="cin" required>
                   </div>
                   <div class="col-md-6">
                     <label for="Email" class="form-label">Adresse e-mail</label>
-                    <input type="email" class="form-control" id="Email" required>
+                    <input type="email" class="form-control" id="mail" placeholder="Email" name="email" required>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Ajouter</button>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary bg-gradient-primary">Ajouter</button>
+                </div>
+                
               </form>
             </div>
           </div>
@@ -255,6 +258,33 @@
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    // Fonction pour ajouter un nouveau client
+    document.getElementById('addClientForm').addEventListener('submit', function (event) {
+     
+  
+      // Récupérer les valeurs du formulaire
+      const name = document.getElementById('name').value;
+      const last_name = document.getElementById('last_name').value;
+      const principal_contact = document.getElementById('principal_contact').value;
+      const address = document.getElementById('address').value;
+      const emergency_number = document.getElementById('emergency_number').value;
+      const gender = document.getElementById('gender').value;
+      const cin = document.getElementById('cin').value;
+      const email = document.getElementById('email').value;
+  
+      // Envoyer les informations du nouveau client au serveur
+      axios.post('/client', { name, last_name, principal_contact, address, emergency_number, gender, cin, email })
+        .then(() => {
+          // Rediriger vers la page allClient.html après l'ajout du client
+          window.location.href = '/allClient.html';
+        })
+        .catch(error => {
+          console.error('Erreur lors de l\'ajout du client:', error);
+        });
+    });
+  </script>
 </body>
 
 </html>
