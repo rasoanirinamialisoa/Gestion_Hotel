@@ -3,4 +3,4 @@
 SELECT reservation.*, name
 FROM reservation
 INNER JOIN client ON reservation.id_client = client.id_client
-WHERE client.name = 'Daniel' OR client.name = 'Maria';
+WHERE client.name = 'Daniel';
