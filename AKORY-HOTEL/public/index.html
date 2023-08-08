@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> AKORY HOTEL - CLIENT </title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/fontawesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/search.css">
+    <link rel="stylesheet" href="css/result.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="js/index.js" defer></script>
+
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#show-menu"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="show-menu">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="reserve.html"> Acceuil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="infoclient.html">Chambres</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Types de Chambres
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">VIP</a>
+                            <a class="dropdown-item" href="#">TWIN</a>
+                            <a class="dropdown-item" href="#">SIMPLE</a>
+                            <a class="dropdown-item" href="#">DOUBLE</a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#blog">Connecter</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header id="home">
+        <a class="logo-home" href="index.html"><img class="logo" src="imgs/remove_logos.png" alt="#" /> </a>
+        <div class="small-container">
+
+            <div class="row">
+
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex align-items-center">
+                    <h1> Bienvenue à
+                        <br> <span> AKORY HOTEL </span>
+                    </h1>
+
+                    <button class="about_button"> A propos de l'hôtel </button>
+
+                </div>
+
+            </div>
+
+            <div class="h-slider welcome d-flex align-items-center justify-content-center">
+                <div class="formulaire">
+                    <div class="search-hotels">
+                        <h2>Recherche d'hôtels</h2>
+                        <!-- Formulaire de recherche d'hôtels -->
+                        <form id="search-form" action="/execute-custom-query" method="post">
+                            <div class="form-group">
+                                <label for="location">Lieu :</label>
+                                <select id="room-type" name="room-type">
+                                    <option value="Akory hotel Antananarivo"> Akory hotel Antananarivo</option>
+                                    <option value="Akory hotel Majunga"> Akory hotel Majunga </option>
+                                    <option value="Akory hotel Morondava "> Akory hotel Morondava </option>
+                                    <option value="Akory hotel Diégo"> Akory hotel Diégo </option>
+                                    <option value="Akory hotel Tuléar"> Akory hotel Tuléar</option>
+                                    <option value="Akory hotel Tamatave"> Akory hotel Tamatave</option>
+                                    <option value="Akory hotel Antsirabe"> Akory hotel Antsirabe</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="check-in">Date d'arrivée :</label>
+                            <input type="date" id="check-in" name="check-in">
+                            </div>
+                            <div class="form-group">
+                                <label for="check-out">Date de départ :</label>
+                            <input type="date" id="check-out" name="check-out">
+                            </div>
+                            <div class="form-group">
+                                <label for="room-type">Type de chambre :</label>
+                            <select id="room-type" name="room-type">
+                                <option value="single">Chambre simple</option>
+                                <option value="double">Chambre double</option>
+                                <option value="twin">Chambre twin</option>
+                                <option value="vip">Chambre VIP</option>
+                            </select>
+                            </div>
+                            
+                        </form>
+                        <button type="submit" class="lets" onclick="openModal()"> C'est parti ! </button>
+                    </div>
+                </div>
+
+                <div class="modal fade" id="resultsModal" tabindex="-1" aria-labelledby="resultsModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="resultsModalLabel">Résultats de la recherche d'hôtels</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                            </div>
+                            <div class="modal-body">
+                                <div id="results"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div id="headerslider" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item carousel-three active"></div>
+                        <div class="carousel-item carousel-two"></div>
+                        <div class="carousel-item carousel-one"></div>
+                    </div>
+                    <a class="carousel-control-prev" href="#headerslider" role="button" data-slide="prev">
+                        <i class="fas fa-angle-double-left"></i>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#headerslider" role="button" data-slide="next">
+                        <i class="fas fa-angle-double-right"></i>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="left"></div>
+        <div class="right"></div>
+    </header>
+
+    <div class="about bg-light">
+        <div class="container">
+            <h2 class="text-center"> À propos de notre hôtel </h2>
+            <div class="row">
+                <div class="col-lg-6 col-12">
+                    <h4> Un meilleur endroit pour profiter de votre vie </h4>
+                    <p> Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                        classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a
+                        Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin
+                        words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in
+                        classical literature, discovered </p>
+                    <button><a href="#"> En savoir plus </a></button>
+                </div>
+                <div class="col-lg-6 col-12">
+                    <div>
+                        <img class="img" src="imgs/40_Anjajavy.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <h2 id="room">Nos Chambres & suites</h2>
+            <div class="row">
+                <div class="col-lg-4 col-12">
+                    <div>
+                        <img class="img" src="imgs/majunga.png" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-12">
+                    <div class="block">
+                        <div>
+                            <strong> à partie de 250 000 Ar</strong>
+                            <h5>Chambres de luxe</h5>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of
+                                a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                more-or-less normal distribution of letters,</p>
+                            <button><a href="#"> En savoir plus </a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gallery lobster-font-family" id="blog">
+        <div class="container">
+            <h2 class="text-calitalize text-center">Our gallery</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="pic-one">
+                        <h4>Relaxed swimming</h4>
+                    </div>
+                    <div class="pic-two">
+                        <h4>Spacious Accommodtion</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="pic-three active">
+                        <h4>Yoga Wellness</h4>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="pic-four">
+                        <h4>Romantic dinner</h4>
+                    </div>
+                    <div class="pic-five">
+                        <h4>Apa & Wellness</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="slider">
+        <h2 class="text-center text-capitalize main-font-family"> Que Disent Nos Clients ! </h2>
+        <div id="slideToNext" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#slideToNext" data-slide-to="0" class="active"></li>
+                <li data-target="#slideToNext" data-slide-to="1"></li>
+                <li data-target="#slideToNext" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel-caption d-block">
+                        <img src="imgs/AKORY (3) - Copy.png">
+                        <h5> Rasoa </h5>
+                        <p>It is a long established fact that a reader wil
+                            l be distracted by the readable content of a page when looking at its layout. The point of
+                            using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-block">
+                        <img src="imgs/AKORY (3).png">
+                        <h5> Ravao</h5>
+                        <p>It is a long established fact that a reader wil
+                            l be distracted by the readable content of a page when looking at its layout. The point of
+                            using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-caption d-block">
+                        <img src="imgs/pic7.png">
+                        <h5> Rabea</h5>
+                        <p>It is a long established fact that a reader wil
+                            l be distracted by the readable content of a page when looking at its layout. The point of
+                            using Lorem Ipsum is that it has a more-or-less normal distribution of letters,</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact text-center">
+        <div class="container">
+            <h2 id="contact"> Contactez-nous </h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="contact-form">
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Phone">
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Message"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <h2 class="text-right"> Avez vous des questions ? Contactez - nous !</h2>
+                </div>
+            </div>
+        </div>
+        <div></div>
+    </div>
+
+
+
+
+    <footer>
+        <div class="foot">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h3> Notre entreprise </h3>
+                        <ul>
+                            <li><a href="#"> Acceuil </a></li>
+                            <li><a href="#">A propos </a></li>
+                            <li><a href="#"> Chambres </a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contacts</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12">
+                        <h3> Address et siège </h3>
+                        <p>Ivandry, HEI,<br>
+                            Madagascar, <br>
+                            +261 000 00 000 00<br>
+                            +261 000 00 000 00 <br>
+                            akoryhotel@gmail.com
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6 col-12 form">
+                        <h3>News letter</h3>
+                        <form>
+                            <input type="email" type="submit" placeholder="Email">
+                            <button type="submit"> Sommettre </button>
+                        </form>
+                        <ul>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>© 2023 Tous droits réservés. Design by DEV UNITED </p>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/result.js"></script>
+    <script src="js/reserve.js"></script>
+    <script type="module" src="selectJs/roomList.js"></script>
+    <script type="module" src="selectJs/fetch.js"></script>
+
+    <script>
+        $(function () {
+
+            'use strict';
+
+            var winH = $(window).height();
+
+            $('header').height(winH);
+        });
+
+        // Fonction pour ouvrir la modal
+function openModal() {
+  $('#resultsModal').modal('show');
+}
+
+// Fonction pour effectuer la recherche d'hôtels
+async function searchHotels() {
+  // Récupérez les valeurs saisies dans les champs du formulaire
+  const location = document.getElementById('location').value;
+  const checkIn = document.getElementById('check-in').value;
+  const checkOut = document.getElementById('check-out').value;
+  const roomType = document.getElementById('room-type').value;
+
+  try {
+      // Effectuez la requête à l'aide d'Axios avec les paramètres de recherche
+      const response = await axios.get('/execute-custom-query', {
+          params: {
+              location: location,
+              checkIn: checkIn,
+              checkOut: checkOut,
+              roomType: roomType
+              // ... Ajoutez d'autres paramètres si nécessaire
+          }
+      });
+
+      // Obtenez les résultats de la réponse
+      const hotels = response.data;
+
+      // Affichez les résultats obtenus (par exemple, en ajoutant les hôtels à un élément HTML)
+      const resultsContainer = document.getElementById('results');
+      resultsContainer.innerHTML = '';
+
+      hotels.forEach(hotel => {
+          const hotelInfo = document.createElement('p');
+          hotelInfo.textContent = `${hotel.hotel_name} - ${hotel.address}`;
+          resultsContainer.appendChild(hotelInfo);
+      });
+
+      // Ouvrez la modal pour afficher les résultats
+      openModal();
+  } catch (error) {
+      console.error('Erreur lors de la requête:', error);
+  }
+}
+
+    </script>
+</body>
+
+</html>

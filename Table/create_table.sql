@@ -2,7 +2,7 @@
 CREATE DATABASE gestion_hotel;
 
 CREATE TABLE receptionist (
-    id_employee INT PRIMARY KEY,
+    id_employee SERIAL PRIMARY KEY,
     first_name VARCHAR(200),
     last_name VARCHAR(200),
     Password VARCHAR(50),
@@ -13,7 +13,7 @@ CREATE TABLE receptionist (
 );
 
 CREATE TABLE client (
-    id_client INT PRIMARY KEY,
+    id_client SERIAL PRIMARY KEY,
     name VARCHAR(200),
     last_name VARCHAR(200),
     principal_contact VARCHAR(50),
@@ -28,7 +28,7 @@ CREATE TABLE client (
 );
 
 CREATE TABLE feedback(
-        id_feedback INT PRIMARY KEY,
+        id_feedback SERIAL PRIMARY KEY,
         comment text,
         rating int,
         id_client INT,
@@ -36,7 +36,7 @@ CREATE TABLE feedback(
 );
 
 CREATE TABLE status_client (
-    id_status_client INT PRIMARY KEY,
+    id_status_client SERIAL PRIMARY KEY,
     status_arrived INT,
     status_missing INT,
     in_fidelity BOOL,
@@ -46,7 +46,7 @@ CREATE TABLE status_client (
 );
 
 CREATE TABLE service (
-    id_service INT PRIMARY KEY,
+    id_service SERIAL PRIMARY KEY,
     service_name VARCHAR(200),
     description VARCHAR(200),
     price FLOAT,
@@ -54,7 +54,7 @@ CREATE TABLE service (
 );
 
 CREATE TABLE buy (
-    id_buy INT PRIMARY KEY,
+    id_buy SERIAL PRIMARY KEY,
     id_client INT,
     id_service INT,
     FOREIGN KEY (id_client) REFERENCES client (id_client),
@@ -62,11 +62,11 @@ CREATE TABLE buy (
 );
 
 CREATE TABLE reservation (
-    id_reservation INT PRIMARY KEY,
+    id_reservation SERIAL PRIMARY KEY,
     date_arrived DATE,
     leaving_date DATE,
     number_of_person INT,
-    is_cancelled BOOL
+    is_cancelled BOOL,
     id_client INT,
     FOREIGN KEY (id_client) REFERENCES client (id_client)
 );
@@ -80,7 +80,7 @@ CREATE TABLE promotion (
 );
 
 CREATE TABLE room_features (
-    id_features INT PRIMARY KEY,
+    id_features SERIAL PRIMARY KEY,
     sea_view BOOL,
     VIP_category BOOL,
     hot_water BOOL,
@@ -145,9 +145,9 @@ CREATE TABLE payment (
     lending_status BOOL,
     total_amount_status BOOL,
     id_client INT,
-    id_receptionist INT,
+    id_employee INT,
     FOREIGN KEY (id_client) REFERENCES client (id_client),
-    FOREIGN KEY (id_receptionist) REFERENCES receptionist (id_receptionist)
+    FOREIGN KEY (id_employee) REFERENCES receptionist (id_employee)
 );
 
 CREATE TABLE payment_method (
@@ -165,13 +165,6 @@ CREATE TABLE choose_payment (
     FOREIGN KEY (id_payment_method) REFERENCES payment_method (id_payment_method)
 );
 
-CREATE TABLE feedback (
-    id_feedback SERIAL PRIMARY KEY,
-    id_client INT REFERENCES client(id_client),
-    comment TEXT,
-    rating INT,
-    sentiment VARCHAR(20)
-);
 
 --delete isCancel table
 DROP TABLE isCancel;
@@ -191,13 +184,4 @@ ADD COLUMN id_hotel INT,
 ADD CONSTRAINT fk_receptionist_hotel
 FOREIGN KEY (id_hotel) REFERENCES hotel (id_hotel);
 
--- Changer en varchar (50) le password de client et receptionist
-ALTER TABLE client
-ALTER COLUMN password TYPE VARCHAR(50);
-
-ALTER TABLE receptionist
-ALTER COLUMN password TYPE VARCHAR(50);
-
-
-
-
+-- changement de id en serial primary key

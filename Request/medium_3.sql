@@ -8,3 +8,4 @@ WHERE id_room IN (
     WHERE (res.date_arrived > CURRENT_DATE + INTERVAL '1 day' OR res.leaving_date < CURRENT_DATE + INTERVAL '2 days')
        OR res.id_reservation IS NULL
 );
+

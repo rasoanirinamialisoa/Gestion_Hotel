@@ -15,7 +15,6 @@ app.use('/pages', express.static(path.join(__dirname, 'public', 'pages')));
 app.use('/', routes);
 
 
-
 app.listen(port, () => {
   console.log(`Le serveur est en cours d'exécution sur http://localhost:${port}`);
 });

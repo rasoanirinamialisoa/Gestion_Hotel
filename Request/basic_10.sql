@@ -1,5 +1,5 @@
 --Afficher la liste des hotels dans une localisation (province) donnée
-SELECT h.*
+SELECT h.hotel_name, h.address
 FROM hotel h
 INNER JOIN province_available pa ON h.id_province = pa.id_province
-WHERE pa.province_name = 'nom_de_la_province';
+WHERE pa.province_name = 'Majunga';

@@ -24,91 +24,130 @@
 </head>
 
 <body class="sidenav-show text-primary bg-gray-100">
+
   <aside class="sidenav navbar navbar-vertical navbar-expand-xs border-0 border-radius-xl my-3 fixed-start ms-3 "
-    id="sidenav-main">
-    <div class="sidenav-header">
-      <a class="m-0" href=" hotel.html ">
-        <img src="../assets/img/AKORY (3) - Copy.png" class="h-200 logo " alt="main_logo">
-       
-      </a>
-    </div>
-    <hr class="horizontal dark mt-0">
+  id="sidenav-main">
+  <div class="sidenav-header">
+    <a class="m-0" href=" hotel.html ">
+      <img src="../assets/img/AKORY (3) - Copy.png" class="h-200 logo" alt="main_logo">
+    </a>
+  </div>
 
-    <div class="sidebar descend" id="sidebar">
-      <div class="sidebar-inner slimscroll">
-        <div id="sidebar-menu" class="sidebar-menu">
-          <ul>
-            <li class="active"> <a href="dashboard.html"><i class="fas fa-columns"></i>
-                <span> Tableau de bord </span></a> </li>
-            <li class="list-divider"></li>
-            <li class="submenu"> <a href="#"></i> <i class="bi-people"></i> <span> Clients </span> <span
-                  class="menu-arrow"></span></a>
-              <ul class="submenu_class none">
-                <li><a href="allClient.html"> Tous les clients </a></li>
-                <li><a href="addClient.html"> Ajouter </a></li>
-                <li><a href="updateClient.html"> Modifier </a></li>
-              </ul>
-            </li>
-            <li class="submenu"> <a href="#"><i class="fas fa-book"></i> <span> Réservation </span> <span
-                  class="menu-arrow"></span></a>
-              <ul class="submenu_class none">
-                <li><a href="allBook.html"> Toutes les réservations </a></li>
-                <li><a href="addBook.html"> Ajouter </a></li>
-                <li><a href="updateBook.html"> Modifier </a></li>
-              </ul>
-            </li>
-            <li class="submenu"> <a href="#"><i class="bi-door-open"></i> <span> Chambres </span> <span
-                  class="menu-arrow"></span></a>
-              <ul class="submenu_class none">
-                <li><a href="allRooms.html"> Tous les chambres </a></li>
-                <li><a href="addRooms.html"> Ajouter </a></li>
-                <li><a href="updateRoom.html"> Modifier </a></li>
-              </ul>
-            </li>
-            <li class="submenu"> <a href="#"><i class="bi-person-badge"></i> <span> Employees </span> <span
-                  class="menu-arrow"></span></a>
-              <ul class="submenu_class none">
-                <li><a href="allEmployee.html"> Tous les employees </a></li>
-                <li><a href="addEmployee.html"> Ajouter </a></li>
-                <li><a href="updateEmployee.html"> Supprimer </a></li>
-              </ul>
-            </li>
-            </li>
-            <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Comptes </span>
-                <span class="menu-arrow"></span></a>
-              <ul class="submenu_class none">
-                <li><a href="payment.html"> Paiements </a></li>
-                <li><a href="modePayement.html"> Méthodes de paiements</a></li>
-              </ul>
-            </li>
+  <hr class="horizontal dark mt-0">
 
-            <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Offres </span>
+  <div class="sidebar descend" id="sidebar">
+    <div class="sidebar-inner slimscroll">
+      <div id="sidebar-menu" class="sidebar-menu">
+        <ul>
+          <li class="active"> <a href="dashboard.html"><i class="fas fa-columns"></i>
+              <span> Tableau de bord </span></a> </li>
+          <li class="list-divider"></li>
+          <li class="submenu"> <a href="#"></i> <i class="bi-people"></i> <span> Clients </span> <span
+                class="menu-arrow"></span></a>
+            <ul class="submenu_class none">
+              <li><a href="allClient.html"> Tous les clients </a></li>
+              <li><a href="addClient.html"> Ajouter </a></li>
+              <li><a href="basic71.html"> Client non payé</a></li>
+              <li><a href="basic72.html"> Client payé </a></li>
+            </ul>
+          </li>
+          <li class="submenu"> <a href="#"><i class="fas fa-book"></i> <span> Réservation </span> <span
+                class="menu-arrow"></span></a>
+            <ul class="submenu_class none">
+              <li><a href="allBook.html"> Toutes les réservations </a></li>
+              <li><a href="addBook.html"> Ajouter </a></li>
+              <li><a href="updateBook.html"> Modifier </a></li>
+              <li><a href="basic3.html"> Réservation récente </a></li>
+              <li><a href="basic6.html"> Réservation d'un client </a></li>
+              <li><a href="basic9.html"> Nombre de réservation fait par un client </a></li>
+
+            </ul>
+          </li>
+          <li class="submenu"> <a href="#"><i class="bi-door-open"></i> <span> Chambres </span> <span
+                class="menu-arrow"></span></a>
+            <ul class="submenu_class none">
+              <li><a href="allRooms.html"> Tous les chambres </a></li>
+              <li><a href="addRooms.html"> Ajouter </a></li>
+              <li><a href="updateRoom.html"> Modifier </a></li>
+              <li><a href="basic3.html"> Rechercher chambre d'une hotel</a></li>
+              <li><a href="basic4.html"> Rechercher chambre en fonction d'une type</a></li>
+              <li><a href="medium9.html"> Chambre occupée </a></li>
+              
+            </ul>
+          </li>
+          <li class="submenu"> <a href="#"><i class="bi-person-badge"></i> <span> Employees </span> <span
+                class="menu-arrow"></span></a>
+            <ul class="submenu_class none">
+              <li><a href="allEmployee.html"> Tous les employees </a></li>
+              <li><a href="b2RecepWithHotel.html"> Tous les employees avec hotel </a></li>
+              <li><a href="addEmployee.html"> Ajouter </a></li>
+            </ul>
+          </li>
+          </li>
+          <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Comptes </span>
               <span class="menu-arrow"></span></a>
             <ul class="submenu_class none">
-              <li><a href="promotion.html"> Promotions </a></li>
-              <li><a href="offreSaisonner.html"> Offes Saisonner</a></li>
+              <li><a href="m14_PayWithRecep.html"> Listes des payements avec client </a></li>
+              <li><a href="modePayement.html"> Méthodes de paiements</a></li>
+              <li><a href="#basic81" data-bs-toggle="modal" data-bs-target="#totalMobileMoneyModal">Total montant fait par Mobile Money</a></li>
             </ul>
           </li>
           
-          <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Hotel </span>
+          <div class="modal fade no-backdrop" id="totalMobileMoneyModal" tabindex="-1" aria-labelledby="totalMobileMoneyModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="totalMobileMoneyModalLabel">Total montant fait par Mobile Money</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                  <p id="totalMobileMoneyAmount"> Total : </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+
+          <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Offres </span>
             <span class="menu-arrow"></span></a>
           <ul class="submenu_class none">
-            <li><a href="allHotel.html"> Tous les hotels </a></li>
-            <li><a href="addHotel.html"> Ajouter </a></li>
+            <li><a href="promotion.html"> Promotions </a></li>
+            <li><a href="offreSaisonner.html"> Offes Saisonner</a></li>
           </ul>
         </li>
-            
-            <li class="submenu"> <a href="services.html"><i class="bi bi-display"></i> <span> Services </span></a>
-            </li>
+        
+        <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Hotel </span>
+          <span class="menu-arrow"></span></a>
+        <ul class="submenu_class none">
+          <li><a href="allHotel.html"> Tous les hotels </a></li>
+          <li><a href="basic10.html"> Hotel dans une province </a></li>
+          <li><a href="medium8.html"> Nombre de chambre pour chaque hôtel </a></li>
           
-            <li class="submenu"> <a href="offres.html"><i class="bi bi-display"></i> <span> Offres </span></a>
-            </li>
-          </ul>
-        </div>
+        </ul>
+      </li>
+
+      <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Rechercher </span>
+        <span class="menu-arrow"></span></a>
+      <ul class="submenu_class none">
+        <li><a href="basic4.html"> Chambre </a></li>
+      </ul>
+    </li>
+          
+          <li class="submenu"> <a href="services.html"><i class="bi bi-display"></i> <span> Services </span></a>
+          </li>
+        
+          <li class="submenu"> <a href="offres.html"><i class="bi bi-display"></i> <span> Offres </span></a>
+          </li>
+        </ul>
       </div>
     </div>
+  </div>
 
-  </aside>
+</aside>
+
 
 
   <main class="main-content position-relative max-height-vh-100 h-100 border-radius-lg ">
@@ -119,57 +158,58 @@
           <nav
             class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-3 shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
             <div class="container">
-        <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-dark" href="../pages/dashboard.html">
-          AKORY HOTEL
-        </a>
-        <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon mt-2">
-            <span class="navbar-toggler-bar bar1"></span>
-            <span class="navbar-toggler-bar bar2"></span>
-            <span class="navbar-toggler-bar bar3"></span>
-          </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navigation">
-          <ul class="navbar-nav mx-auto ms-xl-auto me-xl-7">
-            <li class="nav-item">
-              <a class="nav-link d-flex align-items-center me-2 active" aria-current="page"
-                href="../pages/dashboard.html">
-                <i class="fa fa-chart-pie opacity-6  me-1"></i>
-                Tableau de bord
+              <a class="navbar-brand font-weight-bolder ms-lg-0 ms-3 text-dark" href="../pages/dashboard.html">
+                AKORY HOTEL
               </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-2" href="../pages/profile.html">
-                <i class="fa fa-user opacity-6  me-1"></i>
-                Profile
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-2" href="../pages/sign-up.html">
-                <i class="fas fa-user-circle opacity-6  me-1"></i>
-                Inscrivez-vous
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link me-2" href="../pages/sign-in.html">
-                <i class="fas fa-key opacity-6  me-1"></i>
-                Connecter
-              </a>
-            </li>
-          </ul>
-          <li class="nav-item d-flex align-items-center">
-            <a class="btn btn-round btn-sm mb-0 btn-outline-primary me-2" target="_blank"
-              href="https://www.creative-tim.com/builder?ref=navbar-soft-ui-dashboard"> Votre compte </a>
-          </li>
-          <ul class="navbar-nav d-lg-block d-none">
-            <li class="nav-item">
-              <a href="https://www.creative-tim.com/product/soft-ui-dashboard"
-                class="btn btn-sm btn-round mb-0 me-1 bg-gradient-dark">Connecter </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+              <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon mt-2">
+                  <span class="navbar-toggler-bar bar1"></span>
+                  <span class="navbar-toggler-bar bar2"></span>
+                  <span class="navbar-toggler-bar bar3"></span>
+                </span>
+              </button>
+              <div class="collapse navbar-collapse" id="navigation">
+                <ul class="navbar-nav mx-auto ms-xl-auto me-xl-7">
+                  <li class="nav-item">
+                    <a class="nav-link d-flex align-items-center me-2 active" aria-current="page"
+                      href="../pages/dashboard.html">
+                      <i class="fa fa-chart-pie opacity-6  me-1"></i>
+                      Tableau de bord
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-2" href="../pages/profile.html">
+                      <i class="fa fa-user opacity-6  me-1"></i>
+                      Profile
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-2" href="../pages/sign-up.html">
+                      <i class="fas fa-user-circle opacity-6  me-1"></i>
+                      Inscrivez-vous
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link me-2" href="../pages/sign-in.html">
+                      <i class="fas fa-key opacity-6  me-1"></i>
+                      Connecter
+                    </a>
+                  </li>
+                </ul>
+                <li class="nav-item d-flex align-items-center">
+                  <a class="btn btn-round btn-sm mb-0 btn-outline-primary me-2" target="_blank"
+                    href="https://www.creative-tim.com/builder?ref=navbar-soft-ui-dashboard"> Votre compte </a>
+                </li>
+                <ul class="navbar-nav d-lg-block d-none">
+                  <li class="nav-item">
+                    <a href="https://www.creative-tim.com/product/soft-ui-dashboard"
+                      class="btn btn-sm btn-round mb-0 me-1 bg-gradient-dark">Connecter </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </nav>
           <!-- End Navbar -->
         </div>
@@ -180,55 +220,61 @@
       <div class="row justify-content-center">
         <div class="col-lg-6">
           <div class="card">
-            <div class="card-header bg-primary text-white">
-              Formulaire d'ajout d'un nouveau client
+            <div class="card-header bg-gradient-primary text-white">
+              Ajouter un nouveau client
             </div>
             <div class="card-body">
-              <form>
+              <form role="form" action="/submitClient" method="POST" id="addClientForm">
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label for="name" class="form-label">Nom</label>
-                    <input type="text" class="form-control" id="name" required>
+                    <input type="text" class="form-control" placeholder="Nom" id="name" name="name" required>
                   </div>
                   <div class="col-md-6">
                     <label for="last_name" class="form-label">Prénom</label>
-                    <input type="text" class="form-control" id="last_name" required>
+                    <input type="text" class="form-control" placeholder="Prénom" id="last_name" name="last_name"
+                      required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label for="principal_contact" class="form-label">Contact principal</label>
-                    <input type="text" class="form-control" id="principal_contact" required>
+                    <input type="contact" class="form-control" placeholder="Numéro 1" id="principal_contact"
+                      name="principal_contact" required>
                   </div>
                   <div class="col-md-6">
                     <label for="address" class="form-label">Adresse</label>
-                    <input type="text" class="form-control" id="address" required>
+                    <input type="text" class="form-control" placeholder="Adresse" id="address" name="address" required>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label for="emergency_number" class="form-label">Numéro d'urgence</label>
-                    <input type="text" class="form-control" id="emergency_number" required>
+                    <input type="contact" class="form-control" placeholder="Numéro 2" id="emergency_number"
+                      name="emergency_number" required>
                   </div>
                   <div class="col-md-6">
                     <label for="gender" class="form-label">Genre</label>
-                    <select class="form-select" id="gender" required>
-                      <option value="M">Masculin</option>
-                      <option value="F">Féminin</option>
+                    <select class="form-select" id="gender" name="gender" required>
+                      <option value="M">M</option>
+                      <option value="F">F</option>
                     </select>
                   </div>
                 </div>
                 <div class="row mb-3">
                   <div class="col-md-6">
                     <label for="CIN" class="form-label">Numéro de CIN</label>
-                    <input type="number" class="form-control" id="CIN" required>
+                    <input type="number" class="form-control" placeholder="CIN" id="cin" name="cin" required>
                   </div>
                   <div class="col-md-6">
                     <label for="Email" class="form-label">Adresse e-mail</label>
-                    <input type="email" class="form-control" id="Email" required>
+                    <input type="email" class="form-control" id="mail" placeholder="Email" name="email" required>
                   </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Ajouter</button>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary bg-gradient-primary">Ajouter</button>
+                </div>
+
               </form>
             </div>
           </div>
@@ -251,10 +297,37 @@
   <script src="../assets/js/plugins/drop.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
- 
+
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <script>
+    // Fonction pour ajouter un nouveau client
+    document.getElementById('addClientForm').addEventListener('submit', function (event) {
+
+
+      // Récupérer les valeurs du formulaire
+      const name = document.getElementById('name').value;
+      const last_name = document.getElementById('last_name').value;
+      const principal_contact = document.getElementById('principal_contact').value;
+      const address = document.getElementById('address').value;
+      const emergency_number = document.getElementById('emergency_number').value;
+      const gender = document.getElementById('gender').value;
+      const cin = document.getElementById('cin').value;
+      const email = document.getElementById('email').value;
+
+      // Envoyer les informations du nouveau client au serveur
+      axios.post('/client', { name, last_name, principal_contact, address, emergency_number, gender, cin, email })
+        .then(() => {
+          // Rediriger vers la page allClient.html après l'ajout du client
+          window.location.href = '/allClient.html';
+        })
+        .catch(error => {
+          console.error('Erreur lors de l\'ajout du client:', error);
+        });
+    });
+  </script>
 </body>
 
 </html>

@@ -18,9 +18,11 @@
   <link href="../assets/css/nucleo-svg.css" rel="stylesheet" />
   <link rel="stylesheet" href="../assets/css/dropomenu.css">
   <link id="pagestyle" href="../assets/css/soft-ui-dashboard.css?v=1.0.7" rel="stylesheet" />
+  <script src="../js/crud.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <script defer data-site="YOUR_DOMAIN_HERE" src="https://api.nepcha.com/js/nepcha-analytics.js"></script>
-
+  <script src="../js/basic81.js" defer></script>
+  <script src="../assets/js/core/axios.min.js" defer></script>
 </head>
 
 <body class="sidenav-show  bg-gray-100">
@@ -47,7 +49,8 @@
             <ul class="submenu_class none">
               <li><a href="allClient.html"> Tous les clients </a></li>
               <li><a href="addClient.html"> Ajouter </a></li>
-              <li><a href="updateClient.html"> Modifier </a></li>
+              <li><a href="basic71.html"> Client non payé</a></li>
+              <li><a href="basic72.html"> Client payé </a></li>
             </ul>
           </li>
           <li class="submenu"> <a href="#"><i class="fas fa-book"></i> <span> Réservation </span> <span
@@ -55,7 +58,10 @@
             <ul class="submenu_class none">
               <li><a href="allBook.html"> Toutes les réservations </a></li>
               <li><a href="addBook.html"> Ajouter </a></li>
-              <li><a href="updateBook.html"> Modifier </a></li>
+              <li><a href="basic3.html"> Réservation récente </a></li>
+              <li><a href="basic6.html"> Réservation d'un client </a></li>
+              <li><a href="basic9.html"> Nombre de réservation fait par un client </a></li>
+
             </ul>
           </li>
           <li class="submenu"> <a href="#"><i class="bi-door-open"></i> <span> Chambres </span> <span
@@ -63,51 +69,62 @@
             <ul class="submenu_class none">
               <li><a href="allRooms.html"> Tous les chambres </a></li>
               <li><a href="addRooms.html"> Ajouter </a></li>
-              <li><a href="updateRoom.html"> Modifier </a></li>
+              <li><a href="basic3.html"> Rechercher chambre d'une hotel</a></li>
+              <li><a href="basic4.html"> Rechercher chambre en fonction d'une type</a></li>
+              <li><a href="medium9.html"> Chambre occupée </a></li>
+              
             </ul>
           </li>
           <li class="submenu"> <a href="#"><i class="bi-person-badge"></i> <span> Employees </span> <span
                 class="menu-arrow"></span></a>
             <ul class="submenu_class none">
               <li><a href="allEmployee.html"> Tous les employees </a></li>
+              <li><a href="b2RecepWithHotel.html"> Tous les employees avec hotel </a></li>
               <li><a href="addEmployee.html"> Ajouter </a></li>
-              <li><a href="updateEmployee.html"> Supprimer </a></li>
             </ul>
           </li>
           </li>
           <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Comptes </span>
               <span class="menu-arrow"></span></a>
             <ul class="submenu_class none">
-              <li><a href="payment.html"> Paiements </a></li>
+              <li><a href="m14_PayWithRecep.html"> Listes des payements avec client </a></li>
               <li><a href="modePayement.html"> Méthodes de paiements</a></li>
+              <li><a href="#basic81" data-bs-toggle="modal" data-bs-target="#totalMobileMoneyModal">Total montant reçu par Mobile Money</a></li>
             </ul>
           </li>
-
-          <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Offres </span>
-            <span class="menu-arrow"></span></a>
-          <ul class="submenu_class none">
-            <li><a href="promotion.html"> Promotions </a></li>
-            <li><a href="offreSaisonner.html"> Offes Saisonner</a></li>
-          </ul>
-        </li>
+          
+          <div class="modal fade no-backdrop" id="totalMobileMoneyModal" tabindex="-1" aria-labelledby="totalMobileMoneyModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="totalMobileMoneyModalLabel">Total montant reçu par Mobile Money</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                </div>
+                <div class="modal-body">
+                  <p id="totalMobileMoneyAmount"> Total : </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          
         
         <li class="submenu"> <a href="#"><i class="bi-cash"></i> <span> Hotel </span>
           <span class="menu-arrow"></span></a>
         <ul class="submenu_class none">
           <li><a href="allHotel.html"> Tous les hotels </a></li>
-          <li><a href="addHotel.html"> Ajouter </a></li>
+          <li><a href="basic10.html"> Hotel dans une province </a></li>
+          <li><a href="medium8.html"> Nombre de chambre pour chaque hôtel </a></li>
+          
         </ul>
       </li>
-          
-          <li class="submenu"> <a href="services.html"><i class="bi bi-display"></i> <span> Services </span></a>
-          </li>
-        
-          <li class="submenu"> <a href="offres.html"><i class="bi bi-display"></i> <span> Offres </span></a>
-          </li>
         </ul>
       </div>
     </div>
   </div>
+
 </aside>
 
   
@@ -160,11 +177,11 @@
           </ul>
           <li class="nav-item d-flex align-items-center">
             <a class="btn btn-round btn-sm mb-0 btn-outline-primary me-2" target="_blank"
-              href="https://www.creative-tim.com/builder?ref=navbar-soft-ui-dashboard"> Votre compte </a>
+              href="sign-in.html"> Votre compte </a>
           </li>
           <ul class="navbar-nav d-lg-block d-none">
             <li class="nav-item">
-              <a href="https://www.creative-tim.com/product/soft-ui-dashboard"
+              <a href="sign-up.html"
                 class="btn btn-sm btn-round mb-0 me-1 bg-gradient-dark">Connecter </a>
             </li>
           </ul>
@@ -589,6 +606,7 @@
   <script src="../assets/js/plugins/chartjs.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script>
+    
     $(document).ready(function () {
       // Toggle submenu when clicked
       $(".submenu > a").on("click", function (e) {
@@ -789,6 +807,8 @@
     });
   </script>
   
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
   <script async defer src="https://buttons.github.io/buttons.js"></script>
   <script src="../assets/js/soft-ui-dashboard.min.js?v=1.0.7"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>

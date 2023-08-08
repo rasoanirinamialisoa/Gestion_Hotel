@@ -6,3 +6,10 @@ INNER JOIN room rm ON r.id_reservation = rm.id_reservation
 INNER JOIN hotel h ON rm.id_hotel = h.id_hotel
 WHERE h.hotel_name = 'Akory hotel Majunga'
 ORDER BY r.date_arrived DESC;
+
+
+
+
+
+
+
