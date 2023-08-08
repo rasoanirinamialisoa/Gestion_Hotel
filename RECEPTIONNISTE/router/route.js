@@ -36,6 +36,7 @@ router.post('/execute-query-9', generalController.basic9);
 router.post('/execute-query-10', generalController.basic10);
 router.get('/execute-query-11', generalController.medium8);
 router.get('/execute-query-12', generalController.medium9);
+router.get('/execute-query-13', generalController.medium7);
 
 
 // Route pour exécuter la requête

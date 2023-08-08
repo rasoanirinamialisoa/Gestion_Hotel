@@ -166,6 +166,29 @@ const medium9 = (req, res) => {
     });
 };
 
+// generalController.js
+
+
+
+const medium7 = (req, res) => {
+  const query = `
+    SELECT c.name, COUNT(r.id_reservation) AS cancellations
+    FROM client c
+    INNER JOIN reservation r ON c.id_client = r.id_client
+    WHERE r.is_cancelled = true
+    GROUP BY c.name;
+  `;
+
+  db.query(query)
+    .then(result => {
+      res.json(result.rows);
+    })
+    .catch(error => {
+      res.status(500).json({ error: 'Internal Server Error' });
+    });
+};
+
+
 module.exports = {
   basic2,
   medium4,
@@ -175,5 +198,6 @@ module.exports = {
   basic9,
   basic10,
   medium8,
-  medium9
+  medium9,
+  medium7
 };
