@@ -1,25 +1,16 @@
-// Configuration de la connexion à la base de données
-const { Pool } = require('pg');
-const pool = new Pool({
-    user: 'rotsy',
-    host: 'localhost',
-    database: 'gestion_hotel',
-    password: 'rotsy123',
-    port: 5432, // ou le port que vous avez configuré pour PostgreSQL
-  });
-  
-  // Gestion des erreurs de connexion à la base de données
-  pool.on('error', (err) => {
-    console.error('Erreur lors de la connexion à la base de données', err);
-  });
-  
-  // Vérifier si le pool de connexion est connecté
-  pool.connect((err, client, release) => {
-    if (err) {
-      console.error('Erreur lors de l\'obtention du client depuis le pool de connexion', err);
-      return;
-    }
-    console.log('Connecté à la base de données PostgreSQL !');
-    release(); // Relâcher le client
-  });
-  
+const express = require('express');
+const bodyParser = require('body-parser');
+const path = require('path'); 
+
+const app = express();
+const port = 4200;
+
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
+
+// Configuration pour servir des fichiers statiques depuis le dossier /public
+app.use(express.static(path.join(__dirname)));
+
+app.listen(port, () => {
+  console.log(`Le serveur est en cours d'exécution sur http://localhost:${port}`);
+});
